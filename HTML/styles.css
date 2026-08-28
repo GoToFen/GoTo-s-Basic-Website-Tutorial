@@ -1,0 +1,225 @@
+body {
+    background-color: white;
+    margin: 0px;
+    padding: 0px;
+    text-align: justify;
+}
+
+#self-a {
+    display: block;
+    padding: 12px;
+    background-color: #dddddd;
+    color: black;
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+}
+#self-a:hover {
+    background-color: #dddddd;
+    color: inherit;
+}
+
+#top {
+    background-color: #201f27;
+    position: fixed;
+    top: 0;
+    left: 0;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    width: 100%;
+}
+#top li {
+    float: left;
+
+    a:not(#self-a) {
+        display: block;
+        padding: 12px;
+        color: white;
+        font-size: 16px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-align: center;
+        text-decoration: none;
+    }
+    a:hover:not(#self-a:hover) {
+        background-color: #0d0c0f;
+        cursor: pointer;
+    }
+}
+
+#left {
+    background-color: #dddddd;
+    position: fixed;
+    top: 45px;
+    left: 0;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    padding-top: 10px;
+    overflow: scroll;
+    width: 250px;
+    height: 100%;
+}
+#left li {
+    float: top;
+
+    a {
+        display: block;
+        padding: 5px;
+        padding-left: 20px;
+        color: black;
+        font-size: 16px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-decoration: none;
+    }
+    a:hover:not(#self-b:hover) {
+        background-color: #d6d6d6;
+        color: black;
+        cursor: pointer;
+    }
+}
+#self-b {
+    font-weight: bold;
+    background-color: #cccccc;
+}
+#self-b:hover {
+    background-color: #bbbbbb;
+}
+
+.main {
+    margin: 10px;
+    margin-left: 270px;
+    padding-top: 300px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+}
+.main .division {
+    margin-left: 20px;
+}
+
+h1 {
+    font-weight: 400;
+    font-size: xxx-large;
+}
+h2 {
+    font-weight: 400;
+    font-size: xx-large;
+}
+
+.previous {
+    float: left;
+
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 10px;
+
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: white;
+
+    font-size: large;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
+.next {
+    float: right;
+
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 10px;
+
+    border: 1px solid #04aa6d;
+    border-radius: 5px;
+    background-color: #04aa6d;
+
+    font-size: large;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+
+.previous:hover {
+    background-color: #eeeeee;
+    color: black;
+}
+.next:hover {
+    background-color: #049c65;
+    color: white;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: #dddddd;
+}
+
+.example {
+    background-color: #eeeeee;
+    padding: 20px;
+    border-radius: 10px;
+}
+.example-title {
+    font-size: x-large;
+}
+.example div {
+    margin-top: 10px;
+    background-color: white;
+    border-left: 5px solid #04aa6d;
+    padding-left: 15px;
+    font-size: 120%;
+    line-height: normal;
+}
+
+.tag-color {
+    color: #888888;
+}
+.tagname-color {
+    color: darkmagenta;
+}
+
+.code {
+    background-color: #eeeeee;
+    border-radius: 2px;
+    color: crimson;
+    font-size: large;
+}
+
+.note {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: rgb(236, 236, 139);
+}
+
+table {
+    margin-top: 25px;
+    width: 100%;
+    border: 1px solid #bbbbbb;
+    border-collapse: collapse;
+}
+tr {
+    border: 1px solid #bbbbbb;
+}
+tr:nth-child(even) {
+    background-color: #eeeeee;
+}
+td, th {
+    padding: 10px;
+}
+th {
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+a {
+    color: black;
+}
+a:hover {
+    color: #049c65;
+}
