@@ -98,6 +98,7 @@ body {
 }
 .main .division {
     margin-left: 20px;
+    margin-right: 20px;
 }
 
 h1 {
@@ -107,6 +108,10 @@ h1 {
 h2 {
     font-weight: 400;
     font-size: xx-large;
+}
+h3 {
+    font-weight: 400;
+    font-size: x-large;
 }
 
 .previous {
@@ -163,6 +168,7 @@ hr {
     background-color: #eeeeee;
     padding: 20px;
     border-radius: 10px;
+    margin-bottom: 20px;
 }
 .example-title {
     font-size: x-large;
@@ -172,6 +178,8 @@ hr {
     background-color: white;
     border-left: 5px solid #04aa6d;
     padding-left: 15px;
+    padding-top: 5px;
+    padding-bottom: 10px;
     font-size: 120%;
     line-height: normal;
 }
@@ -182,12 +190,21 @@ hr {
 .tagname-color {
     color: darkmagenta;
 }
+.attrname-color {
+    color: green;
+}
+.attrval-color {
+    color: #1966b4;
+}
 
 .code {
     background-color: #eeeeee;
     border-radius: 2px;
     color: crimson;
     font-size: large;
+
+    padding-left: 3px;
+    padding-right: 3px;
 }
 
 .note {
@@ -222,4 +239,13 @@ a {
 }
 a:hover {
     color: #049c65;
+}
+
+@media (max-width: 750px) {
+    #left {
+        visibility: hidden;
+    }
+    .main {
+        margin-left: 10px;
+    }
 }
