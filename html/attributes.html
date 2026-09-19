@@ -5,16 +5,522 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Attributes</title>
 
-    <link rel="stylesheet" href="../styles/development.css">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../styles/html.css">
 </head>
 <body>
-    <div id="out">
-        <div>
-            <div id="in">
-                PAGE UNDER<br>
-                DEVELOPMENT!
-            </div>
+    <nav>
+        <ul id="top">
+            <li><a href="../home.html">Home</a></li>
+            <li><a id="self-a" href="home.html">HTML</a></li>
+            <li><a href="../css/home.html">CSS</a></li>
+        </ul>
+        <ul id="left">
+            <li><a href="home.html">HTML HOME</a></li>
+            <li><a href="introduction.html">HTML Introduction</a></li>
+            <li><a href="basic.html">HTML Basic</a></li>
+            <li><a href="elements.html">HTML Elements</a></li>
+            <li><a id="self-b" href="attributes.html">HTML Attributes</a></li>
+            <li><a href="headings.html">HTML Headings</a></li>
+        </ul>
+    </nav>
+
+    <div id="main">
+
+    
+    <section>
+        <h1>HTML Attributes</h1>
+
+        <a class="previous" href="elements.html">&#x276e; Previous</a>
+        <a class="next" href="headings.html">Next &#x276f;</a>
+
+        <br><br><br>
+    </section>
+    <hr>
+
+    <section>
+        <p>HTML attributes provide additional information about HTML elements.</p>
+    </section>
+    <hr>
+
+    <section id="s1">
+        <h2>HTML Attributes</h2>
+
+        <ul>
+            <li>All HTML elements can have <strong>attributes</strong></li>
+            <li>Attributes provide <strong>additional information</strong> about elements</li>
+            <li>Attributes are always specified in <strong>the start tag</strong></li>
+            <li>Attributes usually come in name/value pairs like: <strong>name="value"</strong></li>
+        </ul>
+    </section>
+    <hr>
+
+    <section id="s2">
+        <h2>The href Attribute</h2>
+
+        <p>
+            The <code class="code">&lt;a&gt;</code> tag defines a hyperlink.
+            The <code class="code">href</code> attribute specifies the URL of the page the link goes to:
+        </p>
+
+        <div class="example">
+            <span class="example-title">Example</span>
+
+            <div><code>
+                <!-- <a href="https://www.youtube.com">Visit Youtube</a> --><!--
+            --><span class="tagname-color"><!--
+                --><span class="tag-color">&lt;</span>a
+                    <span class="attrname-color">href</span><span class="attrval-color">="https://www.youtube.com"</span><!--
+                --><span class="tag-color">&gt;</span><!--
+            --></span><!--
+            -->Visit Youtube<!--
+            --><span class="tagname-color"><!--
+                --><span class="tag-color">&lt;</span>/a<span class="tag-color">&gt;</span><!--
+            --></span><br>
+            </code></div>
         </div>
+
+        <p>You will learn more about links in our <a>HTML Links chapter</a>.</p>
+    </section>
+    <hr>
+
+    <section id="s3">
+        <h2>The src Attribute</h2>
+
+        <p>
+            The <code class="code">&lt;img&gt;</code> tag is used to embed an image in an HTML page.
+            The <code class="code">src</code> attribute specifies the path to the image to be displayed:
+        </p>
+
+        <div class="example">
+            <span class="example-title">Example</span>
+
+            <div><code>
+                <!-- <img src="img_girl.jpg"> --><!--
+            --><span class="tagname-color"><!--
+                --><span class="tag-color">&lt;</span>img
+                    <span class="attrname-color">src</span><span class="attrval-color">="img_girl.jpg"</span><!--
+                --><span class="tag-color">&gt;</span><!--
+            --></span><br>
+            </code></div>
+        </div>
+
+        <p>There are two ways to specify the URL in the <code class="code">src</code> attribute:</p>
+        <p>
+            <strong>1. Absolute URL</strong> -
+            Links to an external image that is hosted on another website.
+            Example: src="https://gotofen.github.io/GoTo-s-Basic-Website-Tutorial/images/img_girl.png".
+        </p>
+        <p>
+            <strong>Notes:</strong>
+            External images might be under copyright. If you do not get permission to use it,
+            you may be in violation of copyright laws. In addition, you cannot control external images;
+            it can suddenly be removed or changed.
+        </p>
+        <p>
+            <strong>2. Relative URL</strong> -
+            Links to an image that is hosted within the website. Here, the URL does not include the domain name.
+            If the URL begins without a slash, it will be relative to the current page.
+            Example: src="img_girl.jpg". If the URL begins with a slash, it will be relative to the domain.
+            Example: src="/GoTo-s-Basic-Website-Tutorial/images/img_girl.jpg".
+        </p>
+        <p>
+            <strong>Tip:</strong>
+            It is almost always best to use relative URLs. They will not break if you change domain.
+        </p>
+    </section>
+    <hr>
+
+    <section id="s4">
+        <h2>The width and height Attributes</h2>
+
+        <p>
+            The <code class="code">&lt;img&gt;</code> tag should also contain the <code class="code">width</code>
+            and <code class="code">height</code> attributes,
+            which specify the width and height of the image (in pixels):
+        </p>
+
+        <div class="example">
+            <span class="example-title">Example</span>
+
+            <div><code>
+                <!-- <img src="img_girl.jpg" width="500" height="600"> --><!--
+            --><span class="tagname-color"><!--
+                --><span class="tag-color">&lt;</span>img
+                    <span class="attrname-color">src</span><span class="attrval-color">="img_girl.jpg"</span>
+                    <span class="attrname-color">width</span><span class="attrval-color">="500"</span>
+                    <span class="attrname-color">height</span><span class="attrval-color">="600"</span><!--
+                --><span class="tag-color">&gt;</span><!--
+            --></span><br>
+            </code></div>
+        </div>
+    </section>
+    <hr>
+
+    <section id="s5">
+        <h2>The alt Attribute</h2>
+
+        <p>
+            The required <code class="code">alt</code> attribute for the <code class="code">img</code>
+            tag specifies an alternate text for an image, if the image for some reason cannot be displayed.
+            This can be due to a slow connection, or an error in the <code class="code">src</code> attribute,
+            or if the user uses a screen reader.
+        </p>
+
+        <div class="example">
+            <span class="example-title">Example</span>
+
+            <div><code>
+                <!-- <img src="img_girl.jpg" alt="Girl with a jacket"> --><!--
+            --><span class="tagname-color"><!--
+                --><span class="tag-color">&lt;</span>img
+                    <span class="attrname-color">src</span><span class="attrval-color">="img_girl.jpg"</span>
+                    <span class="attrname-color">alt</span><span class="attrval-color">="Girl with a jacket"</span><!--
+                --><span class="tag-color">&gt;</span><!--
+            --></span><br>
+            </code></div>
+        </div>
+
+        <div class="example">
+            <span class="example-title">Example</span>
+            <p>See what happens if we try to display an image that does not exist:</p>
+
+            <div><code>
+                <!-- <img src="img_typo.jpg" alt="Girl with a jacket"> --><!--
+            --><span class="tagname-color"><!--
+                --><span class="tag-color">&lt;</span>img
+                    <span class="attrname-color">src</span><span class="attrval-color">="img_typo.jpg"</span>
+                    <span class="attrname-color">alt</span><span class="attrval-color">="Girl with a jacket"</span><!--
+                --><span class="tag-color">&gt;</span><!--
+            --></span><br>
+            </code></div>
+        </div>
+
+        <p>You will learn more about images in our <a>HTML Images chapter</a>.</p>
+    </section>
+    <hr>
+
+    <section id="s6">
+        <h2>The style Attribute</h2>
+
+        <p>
+            The <code class="code">style</code> attribute is used to add styles to an element,
+            such as color, font, size and more.
+        </p>
+
+        <div class="example">
+            <span class="example-title">Example</span>
+
+            <div><code>
+                <!-- <p style="color:red;">This is a red paragraph.</p> --><!--
+            --><span class="tagname-color"><!--
+                --><span class="tag-color">&lt;</span>p
+                    <span class="attrname-color">style</span><span class="attrval-color">="color:red;"</span><!--
+                --><span class="tag-color">&gt;</span><!--
+            --></span><!--
+            -->This is a red paragraph.<!--
+            --><span class="tagname-color"><!--
+                --><span class="tag-color">&lt;</span>/p<span class="tag-color">&gt;</span><!--
+            --></span><br>
+            </code></div>
+        </div>
+
+        <p>You will learn more about styles in our <a>HTML Styles chapter</a>.</p>
+    </section>
+    <hr>
+
+    <section id="s7">
+        <h2>The lang Attribute</h2>
+
+        <p>
+            You should always include the <code class="code">lang</code>
+            attribute inside the <code class="code">&lt;html&gt;</code> tag, to declare the language of the Web page.
+            This is meant to assist search engines and browsers.
+        </p>
+        <p>The following example specifies English as the language:</p>
+
+        <div class="example">
+            <div><code>
+                <!-- <!DOCTYPE html> -->
+                <span class="tag-color">&lt;!DOCTYPE html&gt;</span><br>
+
+                <!-- <html lang="en"> --><!--
+            --><span class="tagname-color"><!--
+                --><span class="tag-color">&lt;</span>html
+                    <span class="attrname-color">lang</span><span class="attrval-color">="en"</span><!--
+                --><span class="tag-color">&gt;</span><!--
+            --></span><br>
+
+                <!-- <body> -->
+                <span class="tagname-color">
+                    <span class="tag-color">&lt;</span>body<span class="tag-color">&gt;</span>
+                </span><br>
+
+                <!-- ... -->
+                ...<br>
+
+                <!-- </body> -->
+                <span class="tagname-color">
+                    <span class="tag-color">&lt;</span>/body<span class="tag-color">&gt;</span>
+                </span><br>
+
+                <!-- </html> -->
+                <span class="tagname-color">
+                    <span class="tag-color">&lt;</span>/html<span class="tag-color">&gt;</span>
+                </span><br>
+            </code></div>
+        </div>
+
+        <p>
+            Country codes can also be added to the language code in the <code class="code">lang</code> attribute.
+            So, the first two characters define the language of the HTML page,
+            and the last two characters define the country.
+        </p>
+        <p>The following example specifies English as the language and United States as the country:</p>
+
+        <div class="example">
+            <div><code>
+                <!-- <!DOCTYPE html> -->
+                <span class="tag-color">&lt;!DOCTYPE html&gt;</span><br>
+
+                <!-- <html lang="en-US"> --><!--
+            --><span class="tagname-color"><!--
+                --><span class="tag-color">&lt;</span>html
+                    <span class="attrname-color">lang</span><span class="attrval-color">="en-US"</span><!--
+                --><span class="tag-color">&gt;</span><!--
+            --></span><br>
+
+                <!-- <body> -->
+                <span class="tagname-color">
+                    <span class="tag-color">&lt;</span>body<span class="tag-color">&gt;</span>
+                </span><br>
+
+                <!-- ... -->
+                ...<br>
+
+                <!-- </body> -->
+                <span class="tagname-color">
+                    <span class="tag-color">&lt;</span>/body<span class="tag-color">&gt;</span>
+                </span><br>
+
+                <!-- </html> -->
+                <span class="tagname-color">
+                    <span class="tag-color">&lt;</span>/html<span class="tag-color">&gt;</span>
+                </span><br>
+            </code></div>
+        </div>
+    </section>
+    <hr>
+
+    <section id="s8">
+        <h2>The title Attribute</h2>
+
+        <p>The <code class="code">title</code> attribute defines some extra information about an element.</p>
+        <p>The value of the title attribute will be displayed as a tooltip when you mouse over the element:</p>
+
+        <div class="example">
+            <span class="example-title">Example</span>
+
+            <div><code>
+                <!-- <p title="I'm a tooltip">This is a paragraph.</p> --><!--
+            --><span class="tagname-color"><!--
+                --><span class="tag-color">&lt;</span>p
+                    <span class="attrname-color">title</span><span class="attrval-color">="I'm a tooltip"</span><!--
+                --><span class="tag-color">&gt;</span><!--
+            --></span><!--
+            -->This is a paragraph.<!--
+            --><span class="tagname-color"><!--
+                --><span class="tag-color">&lt;</span>/p<span class="tag-color">&gt;</span><!--
+            --></span><br>
+            </code></div>
+        </div>
+    </section>
+    <hr>
+
+    <section id="s9">
+        <h2>We Suggest: Always Use Lowercase Attributes</h2>
+
+        <p>The HTML standard does not require lowercase attribute names.</p>
+        <p>
+            The title attribute (and all other attributes) can be written with uppercase or lowercase like
+            <strong>title</strong> or <strong>TITLE</strong>.
+        </p>
+        <p>
+            However, W3C <strong>recommends</strong> lowercase attributes in HTML,
+            and <strong>demands</strong> lowercase attributes for stricter document types like XHTML.
+        </p>
+    </section>
+
+    <div class="note"><p>
+        In this tutorial we always use lowercase attribute names.
+    </p></div>
+    <hr>
+
+    <section id="s10">
+        <h2>We Suggest: Always Quote Attribute Values</h2>
+
+        <p>The HTML standard does not require quotes around attribute values.</p>
+        <p>
+            However, W3C <strong>recommends</strong> quotes in HTML,
+            and <strong>demands</strong> quotes for stricter document types like XHTML.
+        </p>
+
+        <div class="example">
+            <span class="example-title">Good:</span>
+
+            <div><code>
+                <!-- <a href="https://gotofen.github.io/GoTo-s-Basic-Website-Tutorial/html/">Visit Youtube</a> --><!--
+            --><span class="tagname-color"><!--
+                --><span class="tag-color">&lt;</span>a
+                    <span class="attrname-color">href</span><span class="attrval-color">="https://gotofen.github.io/GoTo-s-Basic-Website-Tutorial/html/"</span><!--
+                --><span class="tag-color">&gt;</span><!--
+            --></span><!--
+            -->Visit our HTML tutorial<!--
+            --><span class="tagname-color"><!--
+                --><span class="tag-color">&lt;</span>/a<span class="tag-color">&gt;</span><!--
+            --></span><br>
+            </code></div>
+        </div>
+
+        <div class="example">
+            <span class="example-title">Bad:</span>
+
+            <div><code>
+                <!-- <a href=https://gotofen.github.io/GoTo-s-Basic-Website-Tutorial/html/>Visit Youtube</a> --><!--
+            --><span class="tagname-color"><!--
+                --><span class="tag-color">&lt;</span>a
+                    <span class="attrname-color">href</span><span class="attrval-color">=https://gotofen.github.io/GoTo-s-Basic-Website-Tutorial/html/</span><!--
+                --><span class="tag-color">&gt;</span><!--
+            --></span><!--
+            -->Visit our HTML tutorial<!--
+            --><span class="tagname-color"><!--
+                --><span class="tag-color">&lt;</span>/a<span class="tag-color">&gt;</span><!--
+            --></span><br>
+            </code></div>
+        </div>
+
+        <p>
+            Sometimes you have to use quotes.
+            This example will not display the title attribute correctly, because it contains a space:
+        </p>
+
+        <div class="example">
+            <span class="example-title">Example</span>
+
+            <div><code>
+                <!-- <p title=Description of GoTo-s-Basic-Website-Tutorial --><!--
+            --><span class="tagname-color"><!--
+                --><span class="tag-color">&lt;</span>p
+                    <span class="attrname-color">title</span><span class="attrval-color">=Description</span>
+                    <span class="attrname-color">of</span>
+                    <span class="attrname-color">GoTo-Basic-Website-Tutorial</span><!--
+                --><span class="tag-color">&gt;</span><!--
+            --></span><br>
+            </code></div>
+        </div>
+    </section>
+
+    <div class="note"><p>
+        In this tutorial we always use quotes around attribute values.
+    </p></div>
+    <hr>
+
+    <section id="s11">
+        <h2>Single or Double Quotes?</h2>
+
+        <p>Double quotes around attribute values are the most common in HTML, but single quotes can also be used.</p>
+        <p>
+            In some situations, when the attribute value itself contains double quotes,
+            it is necessary to use single quotes:
+        </p>
+
+        <div class="example">
+            <div><code>
+                <!-- <p title='John "ShotGun" Nelson' --><!--
+            --><span class="tagname-color"><!--
+                --><span class="tag-color">&lt;</span>p
+                    <span class="attrname-color">title</span><span class="attrval-color">='John "ShotGun" Nelson'</span><!--
+                --><span class="tag-color">&gt;</span><!--
+            --></span><br>
+            </code></div>
+        </div>
+
+        <p>Or vice versa:</p>
+
+        <div class="example">
+            <div><code>
+                <!-- <p title="John 'ShotGun' Nelson" --><!--
+            --><span class="tagname-color"><!--
+                --><span class="tag-color">&lt;</span>p
+                    <span class="attrname-color">title</span><span class="attrval-color">="John 'ShotGun' Nelson"</span><!--
+                --><span class="tag-color">&gt;</span><!--
+            --></span><br>
+            </code></div>
+        </div>
+    </section>
+    <hr>
+
+    <section id="s12">
+        <h2>Chapter Summary</h2>
+
+        <ul>
+            <li>All HTML elements can have <strong>attributes</strong></li>
+            <li>
+                The <code class="code">href</code> attribute of <code class="code">&lt;a&gt;</code>
+                specifies the URL of the page the link goes to
+            </li>
+            <li>
+                The <code class="code">src</code> attribute of <code class="code">&lt;img&gt;</code>
+                specifies the path to the image to be displayed
+            </li>
+            <li>
+                The <code class="code">width</code> and <code class="code">height</code>
+                attributes of <code class="code">&lt;img&gt;</code> provide size information for images
+            </li>
+            <li>
+                The <code class="code">alt</code> attribute of <code class="code">&lt;img&gt;</code>
+                provides an alternate text for an image
+            </li>
+            <li>
+                The <code class="code">src</code> attribute is used to add styles to an element,
+                such as color, size, font, and more
+            </li>
+            <li>
+                The <code class="code">lang</code> attribute of the <code class="code">&lt;html&gt;</code>
+                tag declares the language of the Web page
+            </li>
+            <li>The <code class="code">title</code> attribute defines some extra information about an element</li>
+        </ul>
+    </section>
+    <hr>
+
+    <section>
+        <a class="previous" href="elements.html">&#x276e; Previous</a>
+        <a class="next" href="headings.html">Next &#x276f;</a>
+
+        <br><br><br>
+    </section>
+
+
     </div>
+
+    <footer>
+        <span>Back to top:</span><br>
+
+        <ul id="footerl">
+            <li><a href="#s1">HTML Attributes</a></li>
+            <li><a href="#s2">The href Attribute</a></li>
+            <li><a href="#s3">The src Attribute</a></li>
+            <li><a href="#s4">The width and height Attributes</a></li>
+            <li><a href="#s5">The alt Attribute</a></li>
+            <li><a href="#s6">The style Attribute</a></li>
+            <li><a href="#s7">The lang Attribute</a></li>
+            <li><a href="#s8">The title Attribute</a></li>
+            <li><a href="#s9">We Suggest: Always Use Lowercase Attributes</a></li>
+            <li><a href="#s10">We Suggest: Always Quote Attribute Values</a></li>
+            <li><a href="#s11">Single or Double Quotes?</a></li>
+            <li><a href="#s12">Chapter Summary</a></li>
+        </ul>
+    </footer>
 </body>
 </html>
