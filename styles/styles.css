@@ -89,14 +89,14 @@ body {
     background-color: #bbbbbb;
 }
 
-.main {
+#main {
     margin: 10px;
     margin-left: 270px;
     padding-top: 300px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
 }
-.main .division {
+section {
     margin-left: 20px;
     margin-right: 20px;
 }
@@ -184,19 +184,6 @@ hr {
     line-height: normal;
 }
 
-.tag-color {
-    color: #888888;
-}
-.tagname-color {
-    color: darkmagenta;
-}
-.attrname-color {
-    color: green;
-}
-.attrval-color {
-    color: #1966b4;
-}
-
 .code {
     background-color: #eeeeee;
     border-radius: 2px;
@@ -211,7 +198,7 @@ hr {
     margin-top: 20px;
     margin-bottom: 20px;
     padding: 20px;
-    background-color: rgb(236, 236, 139);
+    background-color: rgb(230, 230, 174);
 }
 
 table {
