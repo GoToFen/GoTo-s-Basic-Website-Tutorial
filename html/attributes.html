@@ -67,17 +67,99 @@
             <span class="example-title">Example</span>
 
             <div><code>
-                <!-- <a href="https://www.youtube.com">Visit Youtube</a> --><!--
+                <!-- <a href="https://gotofen.github.io/GoTo-s-Basic-Website-Tutorial/">Visit Youtube</a> --><!--
             --><span class="tagname-color"><!--
                 --><span class="tag-color">&lt;</span>a
-                    <span class="attrname-color">href</span><span class="attrval-color">="https://www.youtube.com"</span><!--
+                    <span class="attrname-color">href</span><span class="attrval-color">="https://gotofen.github.io/GoTo-s-Basic-Website-Tutorial"</span><!--
                 --><span class="tag-color">&gt;</span><!--
             --></span><!--
-            -->Visit Youtube<!--
+            -->Visit GoTo's Basic Website Tutorial<!--
             --><span class="tagname-color"><!--
                 --><span class="tag-color">&lt;</span>/a<span class="tag-color">&gt;</span><!--
             --></span><br>
             </code></div>
+
+            <button id="rb1" class="result-btn" onclick="
+                resultBtn = document.getElementById('rb1');
+                resultDiv = document.getElementById('r1');
+                if (resultDiv.style.display == 'none' || resultDiv.style.display == '') {
+                    resultDiv.style.display = 'block';
+                    resultBtn.innerHTML = 'Hide Result';
+                }
+                else {
+                    resultDiv.style.display = 'none';
+                    resultBtn.innerHTML = 'Show Result';
+                }
+            ">Show Result</button>
+
+            <div class="result" id="r1">
+                <div><code>
+                    <!-- <!DOCTYPE html> -->
+                    <span class="tag-color">&lt;!DOCTYPE html&gt;</span><br>
+
+                    <!-- <html> -->
+                    <span class="tagname-color">
+                        <span class="tag-color">&lt;</span>html<span class="tag-color">&gt;</span>
+                    </span><br>
+
+                    <!-- <body> -->
+                    <span class="tagname-color">
+                        <span class="tag-color">&lt;</span>body<span class="tag-color">&gt;</span>
+                    </span><br>
+
+                    <!--  -->
+                    <br>
+                    
+                    <!-- <h2>The href Attribute</h2> --><!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>h2<span class="tag-color">&gt;</span><!--
+                --></span><!--
+                -->The href attribute<!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>/h2<span class="tag-color">&gt;</span><!--
+                --></span><br>
+                    <!--  -->
+                    <br>
+
+                    <!-- <p>HTML links are defined with the a tag. The link address is specified in the href attribute:</p> --><!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>p<span class="tag-color">&gt;</span><!--
+                --></span><!--
+                -->HTML links are defined with the a tag. The link address is specified in the href attribute:<!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>/p<span class="tag-color">&gt;</span><!--
+                --></span><br>
+
+                    <!--  -->
+                    <br>
+
+                    <!-- <a href="https://gotofen.github.io/GoTo-s-Basic-Website-Tutorial/">Visit Youtube</a> --><!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>a
+                        <span class="attrname-color">href</span><span class="attrval-color">="https://gotofen.github.io/GoTo-s-Basic-Website-Tutorial"</span><!--
+                    --><span class="tag-color">&gt;</span><!--
+                --></span><!--
+                -->Visit GoTo's Basic Website Tutorial<!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>/a<span class="tag-color">&gt;</span><!--
+                --></span><br>
+
+                    <!--  -->
+                    <br>
+
+                    <!-- </body> -->
+                    <span class="tagname-color">
+                        <span class="tag-color">&lt;</span>/body<span class="tag-color">&gt;</span>
+                    </span><br>
+
+                    <!-- </html> -->
+                    <span class="tagname-color">
+                        <span class="tag-color">&lt;</span>/html<span class="tag-color">&gt;</span>
+                    </span><br>
+                </code></div>
+
+                <iframe src="../examples/attributes/example1.html"></iframe>
+            </div>
         </div>
 
         <p>You will learn more about links in our <a>HTML Links chapter</a>.</p>
@@ -103,13 +185,91 @@
                 --><span class="tag-color">&gt;</span><!--
             --></span><br>
             </code></div>
+
+            <button id="rb2" class="result-btn" onclick="
+                resultBtn = document.getElementById('rb2');
+                resultDiv = document.getElementById('r2');
+                if (resultDiv.style.display == 'none' || resultDiv.style.display == '') {
+                    resultDiv.style.display = 'block';
+                    resultBtn.innerHTML = 'Hide Result';
+                }
+                else {
+                    resultDiv.style.display = 'none';
+                    resultBtn.innerHTML = 'Show Result';
+                }
+            ">Show Result</button>
+
+            <div class="result" id="r2">
+                <div><code>
+                    <!-- <!DOCTYPE html> -->
+                    <span class="tag-color">&lt;!DOCTYPE html&gt;</span><br>
+
+                    <!-- <html> -->
+                    <span class="tagname-color">
+                        <span class="tag-color">&lt;</span>html<span class="tag-color">&gt;</span>
+                    </span><br>
+
+                    <!-- <body> -->
+                    <span class="tagname-color">
+                        <span class="tag-color">&lt;</span>body<span class="tag-color">&gt;</span>
+                    </span><br>
+
+                    <!--  -->
+                    <br>
+                    
+                    <!-- <h2>The src Attribute</h2> --><!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>h2<span class="tag-color">&gt;</span><!--
+                --></span><!--
+                -->The src attribute<!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>/h2<span class="tag-color">&gt;</span><!--
+                --></span><br>
+
+                    <!-- <p>HTML images are defined with the img tag, and the filename of the image source is specified in the src attribute:</p> --><!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>p<span class="tag-color">&gt;</span><!--
+                --></span><!--
+                -->HTML images are defined with the img tag, and the filename of the image source is specified in the src attribute:<!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>/p<span class="tag-color">&gt;</span><!--
+                --></span><br>
+
+                    <!--  -->
+                    <br>
+
+                    <!-- <img src="img_girl.jpg"> --><!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>img
+                        <span class="attrname-color">src</span><span class="attrval-color">="/GoTo-s-Basic-Website-Tutorial/images/img_girl.jpg"</span>
+                        <span class="attrname-color">width</span><span class="attrval-color">="500"</span>
+                        <span class="attrname-color">height</span><span class="attrval-color">="600"</span><!--
+                    --><span class="tag-color">&gt;</span><!--
+                --></span><br>
+
+                    <!--  -->
+                    <br>
+
+                    <!-- </body> -->
+                    <span class="tagname-color">
+                        <span class="tag-color">&lt;</span>/body<span class="tag-color">&gt;</span>
+                    </span><br>
+
+                    <!-- </html> -->
+                    <span class="tagname-color">
+                        <span class="tag-color">&lt;</span>/html<span class="tag-color">&gt;</span>
+                    </span><br>
+                </code></div>
+
+                <iframe src="../examples/attributes/example2.html"></iframe>
+            </div>
         </div>
 
         <p>There are two ways to specify the URL in the <code class="code">src</code> attribute:</p>
         <p>
             <strong>1. Absolute URL</strong> -
             Links to an external image that is hosted on another website.
-            Example: src="https://gotofen.github.io/GoTo-s-Basic-Website-Tutorial/images/img_girl.png".
+            Example: src="https://gotofen.github.io/GoTo-s-Basic-Website-Tutorial/images/img_girl.jpg".
         </p>
         <p>
             <strong>Notes:</strong>
@@ -153,6 +313,84 @@
                 --><span class="tag-color">&gt;</span><!--
             --></span><br>
             </code></div>
+
+            <button id="rb3" class="result-btn" onclick="
+                resultBtn = document.getElementById('rb3');
+                resultDiv = document.getElementById('r3');
+                if (resultDiv.style.display == 'none' || resultDiv.style.display == '') {
+                    resultDiv.style.display = 'block';
+                    resultBtn.innerHTML = 'Hide Result';
+                }
+                else {
+                    resultDiv.style.display = 'none';
+                    resultBtn.innerHTML = 'Show Result';
+                }
+            ">Show Result</button>
+
+            <div class="result" id="r3">
+                <div><code>
+                    <!-- <!DOCTYPE html> -->
+                    <span class="tag-color">&lt;!DOCTYPE html&gt;</span><br>
+
+                    <!-- <html> -->
+                    <span class="tagname-color">
+                        <span class="tag-color">&lt;</span>html<span class="tag-color">&gt;</span>
+                    </span><br>
+
+                    <!-- <body> -->
+                    <span class="tagname-color">
+                        <span class="tag-color">&lt;</span>body<span class="tag-color">&gt;</span>
+                    </span><br>
+
+                    <!--  -->
+                    <br>
+                    
+                    <!-- <h2>Width and Height Attributes</h2> --><!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>h2<span class="tag-color">&gt;</span><!--
+                --></span><!--
+                -->Width and Height Attributes<!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>/h2<span class="tag-color">&gt;</span><!--
+                --></span><br>
+
+                    <!-- <p>The width and height attributes of the img tag, defines the width and height of the image:</p> --><!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>p<span class="tag-color">&gt;</span><!--
+                --></span><!--
+                -->The width and height attributes of the img tag, defines the width and height of the image:<!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>/p<span class="tag-color">&gt;</span><!--
+                --></span><br>
+
+                    <!--  -->
+                    <br>
+
+                    <!-- <img src="/GoTo-s-Basic-Website-Tutorial/images/img_girl.jpg" width="500" height="600"> --><!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>img
+                        <span class="attrname-color">src</span><span class="attrval-color">="/GoTo-s-Basic-Website-Tutorial/images/img_girl.jpg"</span>
+                        <span class="attrname-color">width</span><span class="attrval-color">="500"</span>
+                        <span class="attrname-color">height</span><span class="attrval-color">="600"</span><!--
+                    --><span class="tag-color">&gt;</span><!--
+                --></span><br>
+
+                    <!--  -->
+                    <br>
+
+                    <!-- </body> -->
+                    <span class="tagname-color">
+                        <span class="tag-color">&lt;</span>/body<span class="tag-color">&gt;</span>
+                    </span><br>
+
+                    <!-- </html> -->
+                    <span class="tagname-color">
+                        <span class="tag-color">&lt;</span>/html<span class="tag-color">&gt;</span>
+                    </span><br>
+                </code></div>
+
+                <iframe src="../examples/attributes/example3.html"></iframe>
+            </div>
         </div>
     </section>
     <hr>
@@ -179,6 +417,85 @@
                 --><span class="tag-color">&gt;</span><!--
             --></span><br>
             </code></div>
+
+            <button id="rb4" class="result-btn" onclick="
+                resultBtn = document.getElementById('rb4');
+                resultDiv = document.getElementById('r4');
+                if (resultDiv.style.display == 'none' || resultDiv.style.display == '') {
+                    resultDiv.style.display = 'block';
+                    resultBtn.innerHTML = 'Hide Result';
+                }
+                else {
+                    resultDiv.style.display = 'none';
+                    resultBtn.innerHTML = 'Show Result';
+                }
+            ">Show Result</button>
+
+            <div class="result" id="r4">
+                <div><code>
+                    <!-- <!DOCTYPE html> -->
+                    <span class="tag-color">&lt;!DOCTYPE html&gt;</span><br>
+
+                    <!-- <html> -->
+                    <span class="tagname-color">
+                        <span class="tag-color">&lt;</span>html<span class="tag-color">&gt;</span>
+                    </span><br>
+
+                    <!-- <body> -->
+                    <span class="tagname-color">
+                        <span class="tag-color">&lt;</span>body<span class="tag-color">&gt;</span>
+                    </span><br>
+
+                    <!--  -->
+                    <br>
+                    
+                    <!-- <h2>The alt Attribute</h2> --><!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>h2<span class="tag-color">&gt;</span><!--
+                --></span><!--
+                -->The alt Attribute<!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>/h2<span class="tag-color">&gt;</span><!--
+                --></span><br>
+
+                    <!-- <p>The alt attribute should reflect the image content, so users who cannot see the image get an understanding of what the image contains:</p> --><!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>p<span class="tag-color">&gt;</span><!--
+                --></span><!--
+                -->The alt attribute should reflect the image content, so users who cannot see the image get an understanding of what the image contains:<!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>/p<span class="tag-color">&gt;</span><!--
+                --></span><br>
+
+                    <!--  -->
+                    <br>
+
+                    <!-- <img src="/GoTo-s-Basic-Website-Tutorial/images/img_girl.jpg" alt="Girl with a Jacket" width="500" height="600"> --><!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>img
+                        <span class="attrname-color">src</span><span class="attrval-color">="/GoTo-s-Basic-Website-Tutorial/images/img_girl.jpg"</span>
+                        <span class="attrname-color">alt</span><span class="attrval-color">="Girl with a Jacket"</span>
+                        <span class="attrname-color">width</span><span class="attrval-color">="500"</span>
+                        <span class="attrname-color">height</span><span class="attrval-color">="600"</span><!--
+                    --><span class="tag-color">&gt;</span><!--
+                --></span><br>
+
+                    <!--  -->
+                    <br>
+
+                    <!-- </body> -->
+                    <span class="tagname-color">
+                        <span class="tag-color">&lt;</span>/body<span class="tag-color">&gt;</span>
+                    </span><br>
+
+                    <!-- </html> -->
+                    <span class="tagname-color">
+                        <span class="tag-color">&lt;</span>/html<span class="tag-color">&gt;</span>
+                    </span><br>
+                </code></div>
+
+                <iframe src="../examples/attributes/example4.html"></iframe>
+            </div>
         </div>
 
         <div class="example">
@@ -194,6 +511,74 @@
                 --><span class="tag-color">&gt;</span><!--
             --></span><br>
             </code></div>
+
+            <button id="rb5" class="result-btn" onclick="
+                resultBtn = document.getElementById('rb5');
+                resultDiv = document.getElementById('r5');
+                if (resultDiv.style.display == 'none' || resultDiv.style.display == '') {
+                    resultDiv.style.display = 'block';
+                    resultBtn.innerHTML = 'Hide Result';
+                }
+                else {
+                    resultDiv.style.display = 'none';
+                    resultBtn.innerHTML = 'Show Result';
+                }
+            ">Show Result</button>
+
+            <div class="result" id="r5">
+                <div><code>
+                    <!-- <!DOCTYPE html> -->
+                    <span class="tag-color">&lt;!DOCTYPE html&gt;</span><br>
+
+                    <!-- <html> -->
+                    <span class="tagname-color">
+                        <span class="tag-color">&lt;</span>html<span class="tag-color">&gt;</span>
+                    </span><br>
+
+                    <!-- <body> -->
+                    <span class="tagname-color">
+                        <span class="tag-color">&lt;</span>body<span class="tag-color">&gt;</span>
+                    </span><br>
+
+                    <!--  -->
+                    <br>
+                    
+                    <!-- <p>If we try to display an image that does not exist, the value of the alt attribute will be displayed instead.</p> --><!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>p<span class="tag-color">&gt;</span><!--
+                --></span><!--
+                -->If we try to display an image that does not exist, the value of the alt attribute will be displayed instead.<!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>/p<span class="tag-color">&gt;</span><!--
+                --></span><br>
+
+                    <!--  -->
+                    <br>
+
+                    <!-- <img src="/GoTo-s-Basic-Website-Tutorial/images/img_typo.jpg" alt="Girl with a Jacket"> --><!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>img
+                        <span class="attrname-color">src</span><span class="attrval-color">="/GoTo-s-Basic-Website-Tutorial/images/img_typo.jpg"</span>
+                        <span class="attrname-color">alt</span><span class="attrval-color">="Girl with a Jacket"</span><!--
+                    --><span class="tag-color">&gt;</span><!--
+                --></span><br>
+
+                    <!--  -->
+                    <br>
+
+                    <!-- </body> -->
+                    <span class="tagname-color">
+                        <span class="tag-color">&lt;</span>/body<span class="tag-color">&gt;</span>
+                    </span><br>
+
+                    <!-- </html> -->
+                    <span class="tagname-color">
+                        <span class="tag-color">&lt;</span>/html<span class="tag-color">&gt;</span>
+                    </span><br>
+                </code></div>
+
+                <iframe src="../examples/attributes/example5.html"></iframe>
+            </div>
         </div>
 
         <p>You will learn more about images in our <a>HTML Images chapter</a>.</p>
@@ -223,6 +608,86 @@
                 --><span class="tag-color">&lt;</span>/p<span class="tag-color">&gt;</span><!--
             --></span><br>
             </code></div>
+
+            <button id="rb6" class="result-btn" onclick="
+                resultBtn = document.getElementById('rb6');
+                resultDiv = document.getElementById('r6');
+                if (resultDiv.style.display == 'none' || resultDiv.style.display == '') {
+                    resultDiv.style.display = 'block';
+                    resultBtn.innerHTML = 'Hide Result';
+                }
+                else {
+                    resultDiv.style.display = 'none';
+                    resultBtn.innerHTML = 'Show Result';
+                }
+            ">Show Result</button>
+
+            <div class="result" id="r6">
+                <div><code>
+                    <!-- <!DOCTYPE html> -->
+                    <span class="tag-color">&lt;!DOCTYPE html&gt;</span><br>
+
+                    <!-- <html> -->
+                    <span class="tagname-color">
+                        <span class="tag-color">&lt;</span>html<span class="tag-color">&gt;</span>
+                    </span><br>
+
+                    <!-- <body> -->
+                    <span class="tagname-color">
+                        <span class="tag-color">&lt;</span>body<span class="tag-color">&gt;</span>
+                    </span><br>
+
+                    <!--  -->
+                    <br>
+
+                    <!-- <h2>The style Attribute</h2> --><!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>h2<span class="tag-color">&gt;</span><!--
+                --></span><!--
+                -->The style Attribute<!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>/h2<span class="tag-color">&gt;</span><!--
+                --></span><br>
+                    
+                    <!-- <p>The style attribute is used to add styles to an element, such as color:</p> --><!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>p<span class="tag-color">&gt;</span><!--
+                --></span><!--
+                -->The style attribute is used to add styles to an element, such as color:<!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>/p<span class="tag-color">&gt;</span><!--
+                --></span><br>
+
+                    <!--  -->
+                    <br>
+
+                    <!-- <p style="color:red;">This is a red paragraph.</p> --><!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>p
+                        <span class="attrname-color">style</span><span class="attrval-color">="color:red;"</span><!--
+                    --><span class="tag-color">&gt;</span><!--
+                --></span><!--
+                -->This is a red paragraph.<!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>/p<span class="tag-color">&gt;</span><!--
+                --></span><br>
+
+                    <!--  -->
+                    <br>
+
+                    <!-- </body> -->
+                    <span class="tagname-color">
+                        <span class="tag-color">&lt;</span>/body<span class="tag-color">&gt;</span>
+                    </span><br>
+
+                    <!-- </html> -->
+                    <span class="tagname-color">
+                        <span class="tag-color">&lt;</span>/html<span class="tag-color">&gt;</span>
+                    </span><br>
+                </code></div>
+
+                <iframe src="../examples/attributes/example6.html"></iframe>
+            </div>
         </div>
 
         <p>You will learn more about styles in our <a>HTML Styles chapter</a>.</p>
@@ -333,6 +798,79 @@
                 --><span class="tag-color">&lt;</span>/p<span class="tag-color">&gt;</span><!--
             --></span><br>
             </code></div>
+
+            <button id="rb7" class="result-btn" onclick="
+                resultBtn = document.getElementById('rb7');
+                resultDiv = document.getElementById('r7');
+                if (resultDiv.style.display == 'none' || resultDiv.style.display == '') {
+                    resultDiv.style.display = 'block';
+                    resultBtn.innerHTML = 'Hide Result';
+                }
+                else {
+                    resultDiv.style.display = 'none';
+                    resultBtn.innerHTML = 'Show Result';
+                }
+            ">Show Result</button>
+
+            <div class="result" id="r7">
+                <div><code>
+                    <!-- <!DOCTYPE html> -->
+                    <span class="tag-color">&lt;!DOCTYPE html&gt;</span><br>
+
+                    <!-- <html> -->
+                    <span class="tagname-color">
+                        <span class="tag-color">&lt;</span>html<span class="tag-color">&gt;</span>
+                    </span><br>
+
+                    <!-- <body> -->
+                    <span class="tagname-color">
+                        <span class="tag-color">&lt;</span>body<span class="tag-color">&gt;</span>
+                    </span><br>
+
+                    <!--  -->
+                    <br>
+
+                    <!-- <h2 title="I'm a header">The title Attribute</h2> --><!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>h2
+                        <span class="attrname-color">title</span><span class="attrval-color">="I'm a header"</span><!--    
+                    --><span class="tag-color">&gt;</span><!--
+                --></span><!--
+                -->The style Attribute<!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>/h2<span class="tag-color">&gt;</span><!--
+                --></span><br>
+                    
+                    <!--  -->
+                    <br>
+
+                    <!-- <p title="I'm a tooltip">Mouse over this paragraph, to display the title attribute as a tooltip.</p> --><!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>p
+                        <span class="attrname-color">title</span><span class="attrval-color">="I'm a tooltip"</span><!--
+                    --><span class="tag-color">&gt;</span><!--
+                --></span><!--
+                -->Mouse over this paragraph, to display the title attribute as a tooltip.<!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>/p<span class="tag-color">&gt;</span><!--
+                --></span><br>
+
+                    <!--  -->
+                    <br>
+
+                    <!-- </body> -->
+                    <span class="tagname-color">
+                        <span class="tag-color">&lt;</span>/body<span class="tag-color">&gt;</span>
+                    </span><br>
+
+                    <!-- </html> -->
+                    <span class="tagname-color">
+                        <span class="tag-color">&lt;</span>/html<span class="tag-color">&gt;</span>
+                    </span><br>
+                </code></div>
+
+                <iframe src="../examples/attributes/example7.html"></iframe>
+            </div>
         </div>
     </section>
     <hr>
@@ -413,10 +951,109 @@
                 --><span class="tag-color">&lt;</span>p
                     <span class="attrname-color">title</span><span class="attrval-color">=Description</span>
                     <span class="attrname-color">of</span>
-                    <span class="attrname-color">GoTo-Basic-Website-Tutorial</span><!--
+                    <span class="attrname-color">GoTo-s-Basic-Website-Tutorial</span><!--
                 --><span class="tag-color">&gt;</span><!--
             --></span><br>
             </code></div>
+
+            <button id="rb8" class="result-btn" onclick="
+                resultBtn = document.getElementById('rb8');
+                resultDiv = document.getElementById('r8');
+                if (resultDiv.style.display == 'none' || resultDiv.style.display == '') {
+                    resultDiv.style.display = 'block';
+                    resultBtn.innerHTML = 'Hide Result';
+                }
+                else {
+                    resultDiv.style.display = 'none';
+                    resultBtn.innerHTML = 'Show Result';
+                }
+            ">Show Result</button>
+
+            <div class="result" id="r8">
+                <div><code>
+                    <!-- <!DOCTYPE html> -->
+                    <span class="tag-color">&lt;!DOCTYPE html&gt;</span><br>
+
+                    <!-- <html> -->
+                    <span class="tagname-color">
+                        <span class="tag-color">&lt;</span>html<span class="tag-color">&gt;</span>
+                    </span><br>
+
+                    <!-- <body> -->
+                    <span class="tagname-color">
+                        <span class="tag-color">&lt;</span>body<span class="tag-color">&gt;</span>
+                    </span><br>
+
+                    <!--  -->
+                    <br>
+
+                    <!-- <h1>About GoTo-s-Basic-Website-Tutorial</h1> --><!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>h2<span class="tag-color">&gt;</span><!--
+                --></span><!--
+                -->About GoTo-s-Basic-Website-Tutorial<!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>/h2<span class="tag-color">&gt;</span><!--
+                --></span><br>
+                    
+                    <!--  -->
+                    <br>
+
+                    <!-- <p title=Description of GoTo-s-Basic-Website-Tutorial> --><!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>p
+                        <span class="attrname-color">title</span><span class="attrval-color">=Description</span>
+                        <span class="attrname-color">of</span>
+                        <span class="attrname-color">GoTo-s-Basic-Website-Tutorial</span><!--
+                    --><span class="tag-color">&gt;</span><!--
+                --></span><br>
+
+                    <!-- You cannot omit quotes around an attribute value if the value contains spaces. -->
+                    You cannot omit quotes around an attribute value if the value contains spaces.<br>
+
+                    <!-- </p> -->
+                    <span class="tagname-color">
+                        <span class="tag-color">&lt;</span>/p<span class="tag-color">&gt;</span>
+                    </span><br>
+
+                    <!--  -->
+                    <br>
+
+                    <!-- <p><b> --><!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>p<span class="tag-color">&gt;</span><!--
+                --></span><!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>b<span class="tag-color">&gt;</span><!--
+                --></span><br>
+
+                    <!-- If you move the mouse over the paragraph above, your browser will only display the first word from the title. -->
+                    If you move the mouse over the paragraph above, your browser will only display the first word from the title.<br>
+
+                    <!-- </b></p> --><!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>/b<span class="tag-color">&gt;</span><!--
+                --></span><!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>/p<span class="tag-color">&gt;</span><!--
+                --></span><br>
+
+                    <!--  -->
+                    <br>
+
+                    <!-- </body> -->
+                    <span class="tagname-color">
+                        <span class="tag-color">&lt;</span>/body<span class="tag-color">&gt;</span>
+                    </span><br>
+
+                    <!-- </html> -->
+                    <span class="tagname-color">
+                        <span class="tag-color">&lt;</span>/html<span class="tag-color">&gt;</span>
+                    </span><br>
+                </code></div>
+
+                <iframe src="../examples/attributes/example8.html"></iframe>
+            </div>
         </div>
     </section>
 
@@ -456,6 +1093,106 @@
                 --><span class="tag-color">&gt;</span><!--
             --></span><br>
             </code></div>
+
+            <button id="rb9" class="result-btn" onclick="
+                resultBtn = document.getElementById('rb9');
+                resultDiv = document.getElementById('r9');
+                if (resultDiv.style.display == 'none' || resultDiv.style.display == '') {
+                    resultDiv.style.display = 'block';
+                    resultBtn.innerHTML = 'Hide Result';
+                }
+                else {
+                    resultDiv.style.display = 'none';
+                    resultBtn.innerHTML = 'Show Result';
+                }
+            ">Show Result</button>
+
+            <div class="result" id="r9">
+                <div><code>
+                    <!-- <!DOCTYPE html> -->
+                    <span class="tag-color">&lt;!DOCTYPE html&gt;</span><br>
+
+                    <!-- <html> -->
+                    <span class="tagname-color">
+                        <span class="tag-color">&lt;</span>html<span class="tag-color">&gt;</span>
+                    </span><br>
+
+                    <!-- <body> -->
+                    <span class="tagname-color">
+                        <span class="tag-color">&lt;</span>body<span class="tag-color">&gt;</span>
+                    </span><br>
+
+                    <!--  -->
+                    <br>
+
+                    <!-- <h2>Single or Double Quotes?</h2> --><!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>h2<span class="tag-color">&gt;</span><!--
+                --></span><!--
+                -->Single or Double Quotes?<!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>/h2<span class="tag-color">&gt;</span><!--
+                --></span><br>
+
+                    <!-- <p>In some situations, when the attribute value itself contains double quotes, it is necessary to use single quotes:</p> --><!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>p<span class="tag-color">&gt;</span><!--
+                --></span><!--
+                -->In some situations, when the attribute value itself contains double quotes, it is necessary to use single quotes:<!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>/p<span class="tag-color">&gt;</span><!--
+                --></span><br>
+
+                    <!-- <p>Move your mouse over the paragraphs below to see the effect:</p> --><!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>p<span class="tag-color">&gt;</span><!--
+                --></span><!--
+                -->Move your mouse over the paragraphs below to see the effect:<!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>/p<span class="tag-color">&gt;</span><!--
+                --></span><br>
+
+                    <!--  -->
+                    <br>
+
+                    <!-- <p title='John "ShotGun" Nelson'>John with double quotes</p> --><!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>p
+                        <span class="attrname-color">title</span><span class="attrval-color">='John "ShotGun" Nelson'</span><!--
+                    --><span class="tag-color">&gt;</span><!--
+                --></span><!--
+                -->John with double quotes<!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>/p<span class="tag-color">&gt;</span><!--
+                --></span><br>
+
+                    <!-- <p title="John 'ShotGun' Nelson">John with single quotes</p> --><!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>p
+                        <span class="attrname-color">title</span><span class="attrval-color">="John 'ShotGun' Nelson"</span><!--
+                    --><span class="tag-color">&gt;</span><!--
+                --></span><!--
+                -->John with single quotes<!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>/p<span class="tag-color">&gt;</span><!--
+                --></span><br>
+
+                    <!--  -->
+                    <br>
+
+                    <!-- </body> -->
+                    <span class="tagname-color">
+                        <span class="tag-color">&lt;</span>/body<span class="tag-color">&gt;</span>
+                    </span><br>
+
+                    <!-- </html> -->
+                    <span class="tagname-color">
+                        <span class="tag-color">&lt;</span>/html<span class="tag-color">&gt;</span>
+                    </span><br>
+                </code></div>
+
+                <iframe src="../examples/attributes/example9.html"></iframe>
+            </div>
         </div>
     </section>
     <hr>
