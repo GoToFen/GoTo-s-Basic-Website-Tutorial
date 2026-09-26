@@ -3,6 +3,7 @@ body {
     margin: 0px;
     padding: 0px;
     text-align: left;
+    overflow-x: clip;
 }
 
 #self-a {
@@ -29,7 +30,6 @@ body {
     list-style-type: none;
     margin: 0px;
     padding: 0px;
-    overflow: hidden;
     width: 100%;
 }
 #top li {
@@ -61,7 +61,7 @@ body {
     padding-top: 10px;
     overflow: scroll;
     width: 250px;
-    height: 100%;
+    height: calc(100% - 45px);
 }
 #left li {
     float: top;
@@ -171,6 +171,8 @@ hr {
     padding: 20px;
     border-radius: 10px;
     margin-bottom: 20px;
+
+    overflow-wrap: break-word;
 }
 .example-title {
     font-size: x-large;
@@ -224,7 +226,7 @@ hr {
     margin-top: 20px;
     margin-bottom: 20px;
     padding: 20px;
-    background-color: rgb(230, 230, 174);
+    background-color: #ffffcc;
 }
 
 table {
@@ -305,7 +307,7 @@ footer span {
     #left {
         visibility: hidden;
     }
-    #main {
+    #main, footer {
         margin-left: 0px;
     }
 }
