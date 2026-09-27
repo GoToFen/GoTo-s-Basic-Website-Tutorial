@@ -115,6 +115,18 @@ h3 {
     font-weight: 400;
     font-size: x-large;
 }
+h4 {
+    font-weight: 400;
+    font-size: large;
+}
+h5 {
+    font-weight: 400;
+    font-size: medium;
+}
+h6 {
+    font-weight: 400;
+    font-size: small;
+}
 
 .previous {
     float: left;
@@ -186,6 +198,10 @@ hr {
     padding-bottom: 10px;
     font-size: 120%;
     line-height: normal;
+}
+.example div code {
+    display: inline-block;
+    line-height: 1.2;
 }
 
 .result-btn {
@@ -303,7 +319,7 @@ footer span {
     scroll-margin-top: 65px;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 900px) {
     #left {
         visibility: hidden;
     }

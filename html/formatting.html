@@ -6,6 +6,7 @@
     <title>HTML Text Formatting</title>
 
     <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../styles/html.css">
 </head>
 <body>
     <nav>
@@ -24,7 +25,6 @@
             <li><a href="styles.html">HTML Styles</a></li>
             <li><a id="self-b" href="formatting.html">HTML Formatting</a></li>
             <li><a href="comments.html">HTML Comments</a></li>
-            <li><a href="css.html">HTML CSS</a></li>
         </ul>
     </nav>
 
@@ -43,6 +43,118 @@
 
     <section>
         <p>HTML contains several elements for defining text with a special meaning.</p>
+
+        <div class="example">
+            <span class="example-title">Example</span>
+
+            <div style="border-left:0px; font-size:100%;">
+                <p><b>This text is bold</b></p>
+                <p><i>This text is italic</i></p>
+                <p>This is <sub>subscript</sub> and <sup>superscript</sup></p>
+            </div>
+
+            <button id="rb1" class="result-btn" onclick="
+                resultBtn = document.getElementById('rb1');
+                resultDiv = document.getElementById('r1');
+                if (resultDiv.style.display == 'none' || resultDiv.style.display == '') {
+                    resultDiv.style.display = 'block';
+                    resultBtn.innerHTML = 'Hide Result';
+                }
+                else {
+                    resultDiv.style.display = 'none';
+                    resultBtn.innerHTML = 'Show Result';
+                }
+            ">Show Result</button>
+
+            <div id="r1" class="result">
+                <div><code>
+                    <!-- <!DOCTYPE html> -->
+                    <span class="tag-color">&lt;!DOCTYPE html&gt;</span><br>
+
+                    <!-- <html> -->
+                    <span class="tagname-color">
+                        <span class="tag-color">&lt;</span>html<span class="tag-color">&gt;</span>
+                    </span><br>
+
+                    <!-- <body> -->
+                    <span class="tagname-color">
+                        <span class="tag-color">&lt;</span>body<span class="tag-color">&gt;</span>
+                    </span><br>
+
+                    <!--  -->
+                    <br>
+                    
+                    <!-- <p><b>This text is bold</b></p> --><!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>p<span class="tag-color">&gt;</span><!--
+                --></span><!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>b<span class="tag-color">&gt;</span><!--
+                --></span><!--
+                -->This text is bold<!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>/b<span class="tag-color">&gt;</span><!--
+                --></span><!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>/p<span class="tag-color">&gt;</span><!--
+                --></span><br>
+
+                    <!-- <p><i>This text is italic</i></p> --><!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>p<span class="tag-color">&gt;</span><!--
+                --></span><!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>i<span class="tag-color">&gt;</span><!--
+                --></span><!--
+                -->This text is italic<!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>/i<span class="tag-color">&gt;</span><!--
+                --></span><!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>/p<span class="tag-color">&gt;</span><!--
+                --></span><br>
+
+                    <!-- <p>This is <sub>subscript</sub> and <sup>superscript</sup></p> --><!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>p<span class="tag-color">&gt;</span><!--
+                --></span><!--
+                -->This is
+                    <span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>sub<span class="tag-color">&gt;</span><!--
+                --></span><!--
+                -->subscript<!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>/sub<span class="tag-color">&gt;</span><!--
+                --></span>
+                    and
+                    <span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>sup<span class="tag-color">&gt;</span><!--
+                --></span><!--
+                -->superscript<!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>/sup<span class="tag-color">&gt;</span><!--
+                --></span><!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>/p<span class="tag-color">&gt;</span><!--
+                --></span><br>
+
+                    <!--  -->
+                    <br>
+
+                    <!-- </body> -->
+                    <span class="tagname-color">
+                        <span class="tag-color">&lt;</span>/body<span class="tag-color">&gt;</span>
+                    </span><br>
+
+                    <!-- </html> -->
+                    <span class="tagname-color">
+                        <span class="tag-color">&lt;</span>/html<span class="tag-color">&gt;</span>
+                    </span><br>
+                </code></div>
+
+                <iframe src="../examples/formatting/example1.html"></iframe>
+            </div>
+        </div>
     </section>
     <hr>
 
@@ -69,10 +181,191 @@
         <h2>HTML &lt;b&gt; and &lt;strong&gt; Elements</h2>
 
         <p>The HTML <code class="code">&lt;b&gt;</code> element defines bold text, without any extra importance.</p>
+
+        <div class="example">
+            <span class="example-title">Example</span>
+
+            <div><code>
+                <!-- <b>This text is bold</b> --><!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>b<span class="tag-color">&gt;</span><!--
+                --></span><!--
+                -->This text is bold<!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>/b<span class="tag-color">&gt;</span><!--
+                --></span><br>
+            </code></div>
+
+            <button id="rb2" class="result-btn" onclick="
+                resultBtn = document.getElementById('rb2');
+                resultDiv = document.getElementById('r2');
+                if (resultDiv.style.display == 'none' || resultDiv.style.display == '') {
+                    resultDiv.style.display = 'block';
+                    resultBtn.innerHTML = 'Hide Result';
+                }
+                else {
+                    resultDiv.style.display = 'none';
+                    resultBtn.innerHTML = 'Show Result';
+                }
+            ">Show Result</button>
+
+            <div id="r2" class="result">
+                <div><code>
+                    <!-- <!DOCTYPE html> -->
+                    <span class="tag-color">&lt;!DOCTYPE html&gt;</span><br>
+
+                    <!-- <html> -->
+                    <span class="tagname-color">
+                        <span class="tag-color">&lt;</span>html<span class="tag-color">&gt;</span>
+                    </span><br>
+
+                    <!-- <body> -->
+                    <span class="tagname-color">
+                        <span class="tag-color">&lt;</span>body<span class="tag-color">&gt;</span>
+                    </span><br>
+
+                    <!--  -->
+                    <br>
+                    
+                    <!-- <p>This text is normal.</p> --><!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>p<span class="tag-color">&gt;</span><!--
+                --></span><!--
+                -->This text is normal.<!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>/p<span class="tag-color">&gt;</span><!--
+                --></span><br>
+
+                    <!--  -->
+                    <br>
+                    
+                    <!-- <p><b>This text is bold.</b></p> --><!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>p<span class="tag-color">&gt;</span><!--
+                --></span><!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>b<span class="tag-color">&gt;</span><!--
+                --></span><!--
+                -->This text is bold.<!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>/b<span class="tag-color">&gt;</span><!--
+                --></span><!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>/p<span class="tag-color">&gt;</span><!--
+                --></span><br>
+
+                    <!--  -->
+                    <br>
+
+                    <!-- </body> -->
+                    <span class="tagname-color">
+                        <span class="tag-color">&lt;</span>/body<span class="tag-color">&gt;</span>
+                    </span><br>
+
+                    <!-- </html> -->
+                    <span class="tagname-color">
+                        <span class="tag-color">&lt;</span>/html<span class="tag-color">&gt;</span>
+                    </span><br>
+                </code></div>
+
+                <iframe src="../examples/formatting/example2.html"></iframe>
+            </div>
+        </div>
+
         <p>
             The HTML <code class="code">&lt;strong&gt;</code> element defines text with strong importance.
             The content inside is typically displayed in bold.
         </p>
+
+        <div class="example">
+            <span class="example-title">Example</span>
+
+            <div><code>
+                <!-- <strong>This text is important!</strong> --><!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>strong<span class="tag-color">&gt;</span><!--
+                --></span><!--
+                -->This text is important!<!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>/strong<span class="tag-color">&gt;</span><!--
+                --></span><br>
+            </code></div>
+
+            <button id="rb3" class="result-btn" onclick="
+                resultBtn = document.getElementById('rb3');
+                resultDiv = document.getElementById('r3');
+                if (resultDiv.style.display == 'none' || resultDiv.style.display == '') {
+                    resultDiv.style.display = 'block';
+                    resultBtn.innerHTML = 'Hide Result';
+                }
+                else {
+                    resultDiv.style.display = 'none';
+                    resultBtn.innerHTML = 'Show Result';
+                }
+            ">Show Result</button>
+
+            <div id="r3" class="result">
+                <div><code>
+                    <!-- <!DOCTYPE html> -->
+                    <span class="tag-color">&lt;!DOCTYPE html&gt;</span><br>
+
+                    <!-- <html> -->
+                    <span class="tagname-color">
+                        <span class="tag-color">&lt;</span>html<span class="tag-color">&gt;</span>
+                    </span><br>
+
+                    <!-- <body> -->
+                    <span class="tagname-color">
+                        <span class="tag-color">&lt;</span>body<span class="tag-color">&gt;</span>
+                    </span><br>
+
+                    <!--  -->
+                    <br>
+                    
+                    <!-- <p>This text is normal.</p> --><!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>p<span class="tag-color">&gt;</span><!--
+                --></span><!--
+                -->This text is normal.<!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>/p<span class="tag-color">&gt;</span><!--
+                --></span><br>
+
+                    <!--  -->
+                    <br>
+                    
+                    <!-- <p><strong>This text is important!</strong></p> --><!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>p<span class="tag-color">&gt;</span><!--
+                --></span><!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>strong<span class="tag-color">&gt;</span><!--
+                --></span><!--
+                -->This text is important!<!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>/strong<span class="tag-color">&gt;</span><!--
+                --></span><!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>/p<span class="tag-color">&gt;</span><!--
+                --></span><br>
+
+                    <!--  -->
+                    <br>
+
+                    <!-- </body> -->
+                    <span class="tagname-color">
+                        <span class="tag-color">&lt;</span>/body<span class="tag-color">&gt;</span>
+                    </span><br>
+
+                    <!-- </html> -->
+                    <span class="tagname-color">
+                        <span class="tag-color">&lt;</span>/html<span class="tag-color">&gt;</span>
+                    </span><br>
+                </code></div>
+
+                <iframe src="../examples/formatting/example3.html"></iframe>
+            </div>
+        </div>
     </section>
     <hr>
 
@@ -88,6 +381,96 @@
             a phrase from another language, a thought, a ship name, etc.
         </p>
 
+        <div class="example">
+            <span class="example-title">Example</span>
+
+            <div><code>
+                <!-- <i>This text is italic</i> --><!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>i<span class="tag-color">&gt;</span><!--
+                --></span><!--
+                -->This text is italic<!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>/i<span class="tag-color">&gt;</span><!--
+                --></span><br>
+            </code></div>
+
+            <button id="rb4" class="result-btn" onclick="
+                resultBtn = document.getElementById('rb4');
+                resultDiv = document.getElementById('r4');
+                if (resultDiv.style.display == 'none' || resultDiv.style.display == '') {
+                    resultDiv.style.display = 'block';
+                    resultBtn.innerHTML = 'Hide Result';
+                }
+                else {
+                    resultDiv.style.display = 'none';
+                    resultBtn.innerHTML = 'Show Result';
+                }
+            ">Show Result</button>
+
+            <div id="r4" class="result">
+                <div><code>
+                    <!-- <!DOCTYPE html> -->
+                    <span class="tag-color">&lt;!DOCTYPE html&gt;</span><br>
+
+                    <!-- <html> -->
+                    <span class="tagname-color">
+                        <span class="tag-color">&lt;</span>html<span class="tag-color">&gt;</span>
+                    </span><br>
+
+                    <!-- <body> -->
+                    <span class="tagname-color">
+                        <span class="tag-color">&lt;</span>body<span class="tag-color">&gt;</span>
+                    </span><br>
+
+                    <!--  -->
+                    <br>
+                    
+                    <!-- <p>This text is normal.</p> --><!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>p<span class="tag-color">&gt;</span><!--
+                --></span><!--
+                -->This text is normal.<!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>/p<span class="tag-color">&gt;</span><!--
+                --></span><br>
+
+                    <!--  -->
+                    <br>
+                    
+                    <!-- <p><i>This text is italic.</i></p> --><!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>p<span class="tag-color">&gt;</span><!--
+                --></span><!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>i<span class="tag-color">&gt;</span><!--
+                --></span><!--
+                -->This text is italic.<!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>/i<span class="tag-color">&gt;</span><!--
+                --></span><!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>/p<span class="tag-color">&gt;</span><!--
+                --></span><br>
+
+                    <!--  -->
+                    <br>
+
+                    <!-- </body> -->
+                    <span class="tagname-color">
+                        <span class="tag-color">&lt;</span>/body<span class="tag-color">&gt;</span>
+                    </span><br>
+
+                    <!-- </html> -->
+                    <span class="tagname-color">
+                        <span class="tag-color">&lt;</span>/html<span class="tag-color">&gt;</span>
+                    </span><br>
+                </code></div>
+
+                <iframe src="../examples/formatting/example4.html"></iframe>
+            </div>
+        </div>
+
         <p>
             The HTML <code class="code">&lt;em&gt;</code> element defines emphasized text.
             The content inside is typically displayed in italic.
@@ -96,6 +479,96 @@
             <strong>Tip:</strong> A screen reader will pronounce the words in <code class="code">&lt;em&gt;</code>
             with an emphasis, using verbal stress.
         </p>
+
+        <div class="example">
+            <span class="example-title">Example</span>
+
+            <div><code>
+                <!-- <em>This text is emphasized</em> --><!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>em<span class="tag-color">&gt;</span><!--
+                --></span><!--
+                -->This text is emphasized<!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>/em<span class="tag-color">&gt;</span><!--
+                --></span><br>
+            </code></div>
+
+            <button id="rb5" class="result-btn" onclick="
+                resultBtn = document.getElementById('rb5');
+                resultDiv = document.getElementById('r5');
+                if (resultDiv.style.display == 'none' || resultDiv.style.display == '') {
+                    resultDiv.style.display = 'block';
+                    resultBtn.innerHTML = 'Hide Result';
+                }
+                else {
+                    resultDiv.style.display = 'none';
+                    resultBtn.innerHTML = 'Show Result';
+                }
+            ">Show Result</button>
+
+            <div id="r5" class="result">
+                <div><code>
+                    <!-- <!DOCTYPE html> -->
+                    <span class="tag-color">&lt;!DOCTYPE html&gt;</span><br>
+
+                    <!-- <html> -->
+                    <span class="tagname-color">
+                        <span class="tag-color">&lt;</span>html<span class="tag-color">&gt;</span>
+                    </span><br>
+
+                    <!-- <body> -->
+                    <span class="tagname-color">
+                        <span class="tag-color">&lt;</span>body<span class="tag-color">&gt;</span>
+                    </span><br>
+
+                    <!--  -->
+                    <br>
+                    
+                    <!-- <p>This text is normal.</p> --><!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>p<span class="tag-color">&gt;</span><!--
+                --></span><!--
+                -->This text is normal.<!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>/p<span class="tag-color">&gt;</span><!--
+                --></span><br>
+
+                    <!--  -->
+                    <br>
+                    
+                    <!-- <p><em>This text is emphasized.</em></p> --><!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>p<span class="tag-color">&gt;</span><!--
+                --></span><!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>em<span class="tag-color">&gt;</span><!--
+                --></span><!--
+                -->This text is emphasized.<!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>/em<span class="tag-color">&gt;</span><!--
+                --></span><!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>/p<span class="tag-color">&gt;</span><!--
+                --></span><br>
+
+                    <!--  -->
+                    <br>
+
+                    <!-- </body> -->
+                    <span class="tagname-color">
+                        <span class="tag-color">&lt;</span>/body<span class="tag-color">&gt;</span>
+                    </span><br>
+
+                    <!-- </html> -->
+                    <span class="tagname-color">
+                        <span class="tag-color">&lt;</span>/html<span class="tag-color">&gt;</span>
+                    </span><br>
+                </code></div>
+
+                <iframe src="../examples/formatting/example5.html"></iframe>
+            </div>
+        </div>
     </section>
     <hr>
 
@@ -103,6 +576,96 @@
         <h2>HTML &lt;small&gt; Element</h2>
 
         <p>The HTML <code class="code">&lt;small&gt;</code> element defines smaller text:</p>
+
+        <div class="example">
+            <span class="example-title">Example</span>
+
+            <div><code>
+                <!-- <small>This is some smaller text</small> --><!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>small<span class="tag-color">&gt;</span><!--
+                --></span><!--
+                -->This is some smaller text<!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>/small<span class="tag-color">&gt;</span><!--
+                --></span><br>
+            </code></div>
+
+            <button id="rb6" class="result-btn" onclick="
+                resultBtn = document.getElementById('rb6');
+                resultDiv = document.getElementById('r6');
+                if (resultDiv.style.display == 'none' || resultDiv.style.display == '') {
+                    resultDiv.style.display = 'block';
+                    resultBtn.innerHTML = 'Hide Result';
+                }
+                else {
+                    resultDiv.style.display = 'none';
+                    resultBtn.innerHTML = 'Show Result';
+                }
+            ">Show Result</button>
+
+            <div id="r6" class="result">
+                <div><code>
+                    <!-- <!DOCTYPE html> -->
+                    <span class="tag-color">&lt;!DOCTYPE html&gt;</span><br>
+
+                    <!-- <html> -->
+                    <span class="tagname-color">
+                        <span class="tag-color">&lt;</span>html<span class="tag-color">&gt;</span>
+                    </span><br>
+
+                    <!-- <body> -->
+                    <span class="tagname-color">
+                        <span class="tag-color">&lt;</span>body<span class="tag-color">&gt;</span>
+                    </span><br>
+
+                    <!--  -->
+                    <br>
+                    
+                    <!-- <p>This is some normal text.</p> --><!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>p<span class="tag-color">&gt;</span><!--
+                --></span><!--
+                -->This is some normal text.<!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>/p<span class="tag-color">&gt;</span><!--
+                --></span><br>
+
+                    <!--  -->
+                    <br>
+                    
+                    <!-- <p><small>This is some smaller text.</small></p> --><!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>p<span class="tag-color">&gt;</span><!--
+                --></span><!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>small<span class="tag-color">&gt;</span><!--
+                --></span><!--
+                -->This is some smaller text.<!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>/small<span class="tag-color">&gt;</span><!--
+                --></span><!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>/p<span class="tag-color">&gt;</span><!--
+                --></span><br>
+
+                    <!--  -->
+                    <br>
+
+                    <!-- </body> -->
+                    <span class="tagname-color">
+                        <span class="tag-color">&lt;</span>/body<span class="tag-color">&gt;</span>
+                    </span><br>
+
+                    <!-- </html> -->
+                    <span class="tagname-color">
+                        <span class="tag-color">&lt;</span>/html<span class="tag-color">&gt;</span>
+                    </span><br>
+                </code></div>
+
+                <iframe src="../examples/formatting/example6.html"></iframe>
+            </div>
+        </div>
     </section>
     <hr>
 
@@ -110,6 +673,94 @@
         <h2>HTML &lt;mark&gt; Element</h2>
 
         <p>The HTML <code class="code">&lt;mark&gt;</code> element defines text that should be marked or highlighted:</p>
+
+        <div class="example">
+            <span class="example-title">Example</span>
+
+            <div><code>
+                <!-- <p>Do not forget to buy <mark>milk</mark> today.</p> --><!--
+            --><span class="tagname-color"><!--
+                --><span class="tag-color">&lt;</span>p<span class="tag-color">&gt;</span><!--
+            --></span><!--
+            -->Do not forget to buy
+                <span class="tagname-color"><!--
+                --><span class="tag-color">&lt;</span>mark<span class="tag-color">&gt;</span><!--
+            --></span><!--
+            -->milk<!--
+            --><span class="tagname-color"><!--
+                --><span class="tag-color">&lt;</span>/mark<span class="tag-color">&gt;</span><!--
+            --></span>
+                today.<!--
+            --><span class="tagname-color"><!--
+                --><span class="tag-color">&lt;</span>/p<span class="tag-color">&gt;</span><!--
+            --></span><br>
+            </code></div>
+
+            <button id="rb7" class="result-btn" onclick="
+                resultBtn = document.getElementById('rb7');
+                resultDiv = document.getElementById('r7');
+                if (resultDiv.style.display == 'none' || resultDiv.style.display == '') {
+                    resultDiv.style.display = 'block';
+                    resultBtn.innerHTML = 'Hide Result';
+                }
+                else {
+                    resultDiv.style.display = 'none';
+                    resultBtn.innerHTML = 'Show Result';
+                }
+            ">Show Result</button>
+
+            <div id="r7" class="result">
+                <div><code>
+                    <!-- <!DOCTYPE html> -->
+                    <span class="tag-color">&lt;!DOCTYPE html&gt;</span><br>
+
+                    <!-- <html> -->
+                    <span class="tagname-color">
+                        <span class="tag-color">&lt;</span>html<span class="tag-color">&gt;</span>
+                    </span><br>
+
+                    <!-- <body> -->
+                    <span class="tagname-color">
+                        <span class="tag-color">&lt;</span>body<span class="tag-color">&gt;</span>
+                    </span><br>
+
+                    <!--  -->
+                    <br>
+                    
+                    <!-- <p>Do not forget to buy <mark>milk</mark> today.</p> --><!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>p<span class="tag-color">&gt;</span><!--
+                --></span><!--
+                -->Do not forget to buy
+                    <span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>mark<span class="tag-color">&gt;</span><!--
+                --></span><!--
+                -->milk<!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>/mark<span class="tag-color">&gt;</span><!--
+                --></span>
+                    today.<!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>/p<span class="tag-color">&gt;</span><!--
+                --></span><br>
+
+                    <!--  -->
+                    <br>
+
+                    <!-- </body> -->
+                    <span class="tagname-color">
+                        <span class="tag-color">&lt;</span>/body<span class="tag-color">&gt;</span>
+                    </span><br>
+
+                    <!-- </html> -->
+                    <span class="tagname-color">
+                        <span class="tag-color">&lt;</span>/html<span class="tag-color">&gt;</span>
+                    </span><br>
+                </code></div>
+
+                <iframe src="../examples/formatting/example7.html"></iframe>
+            </div>
+        </div>
     </section>
     <hr>
 
@@ -120,6 +771,94 @@
             The HTML <code class="code">&lt;del&gt;</code> element defines text that has been deleted from a document.
             Browsers will usually strike a line through deleted text:
         </p>
+
+        <div class="example">
+            <span class="example-title">Example</span>
+
+            <div><code>
+                <!-- <p>My favourite color is <del>blue</del> red.</p> --><!--
+            --><span class="tagname-color"><!--
+                --><span class="tag-color">&lt;</span>p<span class="tag-color">&gt;</span><!--
+            --></span><!--
+            -->My favourite color is
+                <span class="tagname-color"><!--
+                --><span class="tag-color">&lt;</span>del<span class="tag-color">&gt;</span><!--
+            --></span><!--
+            -->blue<!--
+            --><span class="tagname-color"><!--
+                --><span class="tag-color">&lt;</span>/del<span class="tag-color">&gt;</span><!--
+            --></span>
+                red.<!--
+            --><span class="tagname-color"><!--
+                --><span class="tag-color">&lt;</span>/p<span class="tag-color">&gt;</span><!--
+            --></span><br>
+            </code></div>
+
+            <button id="rb8" class="result-btn" onclick="
+                resultBtn = document.getElementById('rb8');
+                resultDiv = document.getElementById('r8');
+                if (resultDiv.style.display == 'none' || resultDiv.style.display == '') {
+                    resultDiv.style.display = 'block';
+                    resultBtn.innerHTML = 'Hide Result';
+                }
+                else {
+                    resultDiv.style.display = 'none';
+                    resultBtn.innerHTML = 'Show Result';
+                }
+            ">Show Result</button>
+
+            <div id="r8" class="result">
+                <div><code>
+                    <!-- <!DOCTYPE html> -->
+                    <span class="tag-color">&lt;!DOCTYPE html&gt;</span><br>
+
+                    <!-- <html> -->
+                    <span class="tagname-color">
+                        <span class="tag-color">&lt;</span>html<span class="tag-color">&gt;</span>
+                    </span><br>
+
+                    <!-- <body> -->
+                    <span class="tagname-color">
+                        <span class="tag-color">&lt;</span>body<span class="tag-color">&gt;</span>
+                    </span><br>
+
+                    <!--  -->
+                    <br>
+                    
+                    <!-- <p>My favourite color is <del>blue</del> red.</p> --><!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>p<span class="tag-color">&gt;</span><!--
+                --></span><!--
+                -->My favourite color is
+                    <span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>del<span class="tag-color">&gt;</span><!--
+                --></span><!--
+                -->blue<!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>/del<span class="tag-color">&gt;</span><!--
+                --></span>
+                    red.<!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>/p<span class="tag-color">&gt;</span><!--
+                --></span><br>
+
+                    <!--  -->
+                    <br>
+
+                    <!-- </body> -->
+                    <span class="tagname-color">
+                        <span class="tag-color">&lt;</span>/body<span class="tag-color">&gt;</span>
+                    </span><br>
+
+                    <!-- </html> -->
+                    <span class="tagname-color">
+                        <span class="tag-color">&lt;</span>/html<span class="tag-color">&gt;</span>
+                    </span><br>
+                </code></div>
+
+                <iframe src="../examples/formatting/example8.html"></iframe>
+            </div>
+        </div>
     </section>
     <hr>
 
@@ -130,6 +869,108 @@
             The HTML <code class="code">&lt;ins&gt;</code> element defines a text that has been inserted into a document.
             Browsers will usually underline inserted text:
         </p>
+
+        <div class="example">
+            <span class="example-title">Example</span>
+
+            <div><code>
+                <!-- <p>My favourite color is <del>blue</del> <ins>red</ins>.</p> --><!--
+            --><span class="tagname-color"><!--
+                --><span class="tag-color">&lt;</span>p<span class="tag-color">&gt;</span><!--
+            --></span><!--
+            -->My favourite color is
+                <span class="tagname-color"><!--
+                --><span class="tag-color">&lt;</span>del<span class="tag-color">&gt;</span><!--
+            --></span><!--
+            -->blue<!--
+            --><span class="tagname-color"><!--
+                --><span class="tag-color">&lt;</span>/del<span class="tag-color">&gt;</span><!--
+            --></span>
+                <span class="tagname-color"><!--
+                --><span class="tag-color">&lt;</span>ins<span class="tag-color">&gt;</span><!--
+            --></span><!--
+            -->red<!--
+            --><span class="tagname-color"><!--
+                --><span class="tag-color">&lt;</span>/ins<span class="tag-color">&gt;</span><!--
+            --></span><!--
+            -->.<!--
+            --><span class="tagname-color"><!--
+                --><span class="tag-color">&lt;</span>/p<span class="tag-color">&gt;</span><!--
+            --></span><br>
+            </code></div>
+
+            <button id="rb9" class="result-btn" onclick="
+                resultBtn = document.getElementById('rb9');
+                resultDiv = document.getElementById('r9');
+                if (resultDiv.style.display == 'none' || resultDiv.style.display == '') {
+                    resultDiv.style.display = 'block';
+                    resultBtn.innerHTML = 'Hide Result';
+                }
+                else {
+                    resultDiv.style.display = 'none';
+                    resultBtn.innerHTML = 'Show Result';
+                }
+            ">Show Result</button>
+
+            <div id="r9" class="result">
+                <div><code>
+                    <!-- <!DOCTYPE html> -->
+                    <span class="tag-color">&lt;!DOCTYPE html&gt;</span><br>
+
+                    <!-- <html> -->
+                    <span class="tagname-color">
+                        <span class="tag-color">&lt;</span>html<span class="tag-color">&gt;</span>
+                    </span><br>
+
+                    <!-- <body> -->
+                    <span class="tagname-color">
+                        <span class="tag-color">&lt;</span>body<span class="tag-color">&gt;</span>
+                    </span><br>
+
+                    <!--  -->
+                    <br>
+                    
+                    <!-- <p>My favourite color is <del>blue</del> <ins>red</ins>.</p> --><!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>p<span class="tag-color">&gt;</span><!--
+                --></span><!--
+                -->My favourite color is
+                    <span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>del<span class="tag-color">&gt;</span><!--
+                --></span><!--
+                -->blue<!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>/del<span class="tag-color">&gt;</span><!--
+                --></span>
+                    <span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>ins<span class="tag-color">&gt;</span><!--
+                --></span><!--
+                -->red<!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>/ins<span class="tag-color">&gt;</span><!--
+                --></span><!--
+                -->.<!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>/p<span class="tag-color">&gt;</span><!--
+                --></span><br>
+
+                    <!--  -->
+                    <br>
+
+                    <!-- </body> -->
+                    <span class="tagname-color">
+                        <span class="tag-color">&lt;</span>/body<span class="tag-color">&gt;</span>
+                    </span><br>
+
+                    <!-- </html> -->
+                    <span class="tagname-color">
+                        <span class="tag-color">&lt;</span>/html<span class="tag-color">&gt;</span>
+                    </span><br>
+                </code></div>
+
+                <iframe src="../examples/formatting/example9.html"></iframe>
+            </div>
+        </div>
     </section>
     <hr>
 
@@ -141,6 +982,94 @@
             Subscript text appears half a character below the normal line, and is sometimes rendered in a smaller font.
             Subscript text can be used for chemical formulas, like H<sub>2</sub>O:
         </p>
+
+        <div class="example">
+            <span class="example-title">Example</span>
+
+            <div><code>
+                <!-- <p>This is <sub>subscripted</sub> text.</p> --><!--
+            --><span class="tagname-color"><!--
+                --><span class="tag-color">&lt;</span>p<span class="tag-color">&gt;</span><!--
+            --></span><!--
+            -->This is
+                <span class="tagname-color"><!--
+                --><span class="tag-color">&lt;</span>sub<span class="tag-color">&gt;</span><!--
+            --></span><!--
+            -->subscripted<!--
+            --><span class="tagname-color"><!--
+                --><span class="tag-color">&lt;</span>/sub<span class="tag-color">&gt;</span><!--
+            --></span>
+            text.<!--
+            --><span class="tagname-color"><!--
+                --><span class="tag-color">&lt;</span>/p<span class="tag-color">&gt;</span><!--
+            --></span><br>
+            </code></div>
+
+            <button id="rb10" class="result-btn" onclick="
+                resultBtn = document.getElementById('rb10');
+                resultDiv = document.getElementById('r10');
+                if (resultDiv.style.display == 'none' || resultDiv.style.display == '') {
+                    resultDiv.style.display = 'block';
+                    resultBtn.innerHTML = 'Hide Result';
+                }
+                else {
+                    resultDiv.style.display = 'none';
+                    resultBtn.innerHTML = 'Show Result';
+                }
+            ">Show Result</button>
+
+            <div id="r10" class="result">
+                <div><code>
+                    <!-- <!DOCTYPE html> -->
+                    <span class="tag-color">&lt;!DOCTYPE html&gt;</span><br>
+
+                    <!-- <html> -->
+                    <span class="tagname-color">
+                        <span class="tag-color">&lt;</span>html<span class="tag-color">&gt;</span>
+                    </span><br>
+
+                    <!-- <body> -->
+                    <span class="tagname-color">
+                        <span class="tag-color">&lt;</span>body<span class="tag-color">&gt;</span>
+                    </span><br>
+
+                    <!--  -->
+                    <br>
+                    
+                    <!-- <p>This is <sub>subscripted</sub> text.</p> --><!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>p<span class="tag-color">&gt;</span><!--
+                --></span><!--
+                -->This is
+                    <span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>sub<span class="tag-color">&gt;</span><!--
+                --></span><!--
+                -->subscripted<!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>/sub<span class="tag-color">&gt;</span><!--
+                --></span>
+                text.<!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>/p<span class="tag-color">&gt;</span><!--
+                --></span><br>
+
+                    <!--  -->
+                    <br>
+
+                    <!-- </body> -->
+                    <span class="tagname-color">
+                        <span class="tag-color">&lt;</span>/body<span class="tag-color">&gt;</span>
+                    </span><br>
+
+                    <!-- </html> -->
+                    <span class="tagname-color">
+                        <span class="tag-color">&lt;</span>/html<span class="tag-color">&gt;</span>
+                    </span><br>
+                </code></div>
+
+                <iframe src="../examples/formatting/example10.html"></iframe>
+            </div>
+        </div>
     </section>
     <hr>
 
@@ -152,6 +1081,94 @@
             Superscript text appears half a character above the normal line, and is sometimes rendered in a smaller font.
             Superscript text can be used for footnotes, like WWW<sup>[1]</sup>:
         </p>
+
+        <div class="example">
+            <span class="example-title">Example</span>
+
+            <div><code>
+                <!-- <p>This is <sup>superscripted</sup> text.</p> --><!--
+            --><span class="tagname-color"><!--
+                --><span class="tag-color">&lt;</span>p<span class="tag-color">&gt;</span><!--
+            --></span><!--
+            -->This is
+                <span class="tagname-color"><!--
+                --><span class="tag-color">&lt;</span>sup<span class="tag-color">&gt;</span><!--
+            --></span><!--
+            -->superscripted<!--
+            --><span class="tagname-color"><!--
+                --><span class="tag-color">&lt;</span>/sup<span class="tag-color">&gt;</span><!--
+            --></span>
+            text.<!--
+            --><span class="tagname-color"><!--
+                --><span class="tag-color">&lt;</span>/p<span class="tag-color">&gt;</span><!--
+            --></span><br>
+            </code></div>
+
+            <button id="rb11" class="result-btn" onclick="
+                resultBtn = document.getElementById('rb11');
+                resultDiv = document.getElementById('r11');
+                if (resultDiv.style.display == 'none' || resultDiv.style.display == '') {
+                    resultDiv.style.display = 'block';
+                    resultBtn.innerHTML = 'Hide Result';
+                }
+                else {
+                    resultDiv.style.display = 'none';
+                    resultBtn.innerHTML = 'Show Result';
+                }
+            ">Show Result</button>
+
+            <div id="r11" class="result">
+                <div><code>
+                    <!-- <!DOCTYPE html> -->
+                    <span class="tag-color">&lt;!DOCTYPE html&gt;</span><br>
+
+                    <!-- <html> -->
+                    <span class="tagname-color">
+                        <span class="tag-color">&lt;</span>html<span class="tag-color">&gt;</span>
+                    </span><br>
+
+                    <!-- <body> -->
+                    <span class="tagname-color">
+                        <span class="tag-color">&lt;</span>body<span class="tag-color">&gt;</span>
+                    </span><br>
+
+                    <!--  -->
+                    <br>
+                    
+                    <!-- <p>This is <sup>superscripted</sup> text.</p> --><!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>p<span class="tag-color">&gt;</span><!--
+                --></span><!--
+                -->This is
+                    <span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>sup<span class="tag-color">&gt;</span><!--
+                --></span><!--
+                -->superscripted<!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>/sup<span class="tag-color">&gt;</span><!--
+                --></span>
+                text.<!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>/p<span class="tag-color">&gt;</span><!--
+                --></span><br>
+
+                    <!--  -->
+                    <br>
+
+                    <!-- </body> -->
+                    <span class="tagname-color">
+                        <span class="tag-color">&lt;</span>/body<span class="tag-color">&gt;</span>
+                    </span><br>
+
+                    <!-- </html> -->
+                    <span class="tagname-color">
+                        <span class="tag-color">&lt;</span>/html<span class="tag-color">&gt;</span>
+                    </span><br>
+                </code></div>
+
+                <iframe src="../examples/formatting/example11.html"></iframe>
+            </div>
+        </div>
     </section>
     <hr>
 

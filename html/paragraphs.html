@@ -6,6 +6,7 @@
     <title>HTML Paragraphs</title>
 
     <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../styles/html.css">
 </head>
 <body>
     <nav>
@@ -24,7 +25,6 @@
             <li><a href="styles.html">HTML Styles</a></li>
             <li><a href="formatting.html">HTML Formatting</a></li>
             <li><a href="comments.html">HTML Comments</a></li>
-            <li><a href="css.html">HTML CSS</a></li>
         </ul>
     </nav>
 
@@ -54,6 +54,105 @@
             A paragraph always starts on a new line,
             and browsers automatically add some white space (a margin) before and after a paragraph.
         </p>
+
+        <div class="example">
+            <span class="example-title">Example</span>
+
+            <div><code>
+                <!-- <p>This is a paragraph.</p> --><!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>p<span class="tag-color">&gt;</span><!--
+                --></span><!--
+                -->This is a paragraph.<!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>/p<span class="tag-color">&gt;</span><!--
+                --></span><br>
+
+                <!-- <p>This is another paragraph.</p> --><!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>p<span class="tag-color">&gt;</span><!--
+                --></span><!--
+                -->This is another paragraph.<!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>/p<span class="tag-color">&gt;</span><!--
+                --></span><br>
+            </code></div>
+
+            <button id="rb1" class="result-btn" onclick="
+                resultBtn = document.getElementById('rb1');
+                resultDiv = document.getElementById('r1');
+                if (resultDiv.style.display == 'none' || resultDiv.style.display == '') {
+                    resultDiv.style.display = 'block';
+                    resultBtn.innerHTML = 'Hide Result';
+                }
+                else {
+                    resultDiv.style.display = 'none';
+                    resultBtn.innerHTML = 'Show Result';
+                }
+            ">Show Result</button>
+
+            <div id="r1" class="result">
+                <div><code>
+                    <!-- <!DOCTYPE html> -->
+                    <span class="tag-color">&lt;!DOCTYPE html&gt;</span><br>
+
+                    <!-- <html> -->
+                    <span class="tagname-color">
+                        <span class="tag-color">&lt;</span>html<span class="tag-color">&gt;</span>
+                    </span><br>
+
+                    <!-- <body> -->
+                    <span class="tagname-color">
+                        <span class="tag-color">&lt;</span>body<span class="tag-color">&gt;</span>
+                    </span><br>
+
+                    <!--  -->
+                    <br>
+                    
+                <!-- <p>This is a paragraph.</p> --><!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>p<span class="tag-color">&gt;</span><!--
+                --></span><!--
+                -->This is a paragraph.<!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>/p<span class="tag-color">&gt;</span><!--
+                --></span><br>
+
+                <!-- <p>This is a paragraph.</p> --><!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>p<span class="tag-color">&gt;</span><!--
+                --></span><!--
+                -->This is a paragraph.<!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>/p<span class="tag-color">&gt;</span><!--
+                --></span><br>
+
+                <!-- <p>This is a paragraph.</p> --><!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>p<span class="tag-color">&gt;</span><!--
+                --></span><!--
+                -->This is a paragraph.<!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>/p<span class="tag-color">&gt;</span><!--
+                --></span><br>
+
+                    <!--  -->
+                    <br>
+
+                    <!-- </body> -->
+                    <span class="tagname-color">
+                        <span class="tag-color">&lt;</span>/body<span class="tag-color">&gt;</span>
+                    </span><br>
+
+                    <!-- </html> -->
+                    <span class="tagname-color">
+                        <span class="tag-color">&lt;</span>/html<span class="tag-color">&gt;</span>
+                    </span><br>
+                </code></div>
+
+                <iframe src="../examples/paragraphs/example1.html"></iframe>
+            </div>
+        </div>
     </section>
     <hr>
 
@@ -64,6 +163,182 @@
         <p>Large or small screens, and resized windows will create different results.</p>
         <p>With HTML, you cannot change the display by adding extra spaces or extra lines in your HTML code.</p>
         <p>The browser will automatically remove any extra spaces and lines when the page is displayed:</p>
+
+        <div class="example">
+            <span class="example-title">Example</span>
+
+            <div><code>
+                <!-- <p> -->
+                <span class="tagname-color">
+                    <span class="tag-color">&lt;</span>p<span class="tag-color">&gt;</span>
+                </span><br>
+
+                <!-- This paragraph -->
+                This paragraph<br>
+
+                <!-- contains a lot of lines -->
+                contains a lot of lines<br>
+
+                <!-- in the source code, -->
+                in the source code,<br>
+
+                <!-- but the browser -->
+                but the browser<br>
+
+                <!-- ignores it. -->
+                ignores it.<br>
+
+                <!-- </p> -->
+                <span class="tagname-color">
+                    <span class="tag-color">&lt;</span>/p<span class="tag-color">&gt;</span>
+                </span><br>
+
+                <!--  -->
+                <br>
+
+                <!-- <p> -->
+                <span class="tagname-color">
+                    <span class="tag-color">&lt;</span>p<span class="tag-color">&gt;</span>
+                </span><br>
+
+                <!-- This paragraph -->
+                This paragraph<br>
+
+                <!-- contains         a lot of spaces -->
+                contains&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a lot of spaces<br>
+
+                <!-- in the source         code, -->
+                in the source&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;code,<br>
+
+                <!-- but the        browser -->
+                but the&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;browser<br>
+
+                <!-- ignores it. -->
+                ignores it.<br>
+
+                <!-- </p> -->
+                <span class="tagname-color">
+                    <span class="tag-color">&lt;</span>/p<span class="tag-color">&gt;</span>
+                </span><br>
+            </code></div>
+
+            <button id="rb2" class="result-btn" onclick="
+                resultBtn = document.getElementById('rb2');
+                resultDiv = document.getElementById('r2');
+                if (resultDiv.style.display == 'none' || resultDiv.style.display == '') {
+                    resultDiv.style.display = 'block';
+                    resultBtn.innerHTML = 'Hide Result';
+                }
+                else {
+                    resultDiv.style.display = 'none';
+                    resultBtn.innerHTML = 'Show Result';
+                }
+            ">Show Result</button>
+
+            <div id="r2" class="result">
+                <div><code>
+                    <!-- <!DOCTYPE html> -->
+                    <span class="tag-color">&lt;!DOCTYPE html&gt;</span><br>
+
+                    <!-- <html> -->
+                    <span class="tagname-color">
+                        <span class="tag-color">&lt;</span>html<span class="tag-color">&gt;</span>
+                    </span><br>
+
+                    <!-- <body> -->
+                    <span class="tagname-color">
+                        <span class="tag-color">&lt;</span>body<span class="tag-color">&gt;</span>
+                    </span><br>
+
+                    <!--  -->
+                    <br>
+                    
+                    <!-- <p> -->
+                    <span class="tagname-color">
+                        <span class="tag-color">&lt;</span>p<span class="tag-color">&gt;</span>
+                    </span><br>
+
+                    <!-- This paragraph -->
+                    This paragraph<br>
+
+                    <!-- contains a lot of lines -->
+                    contains a lot of lines<br>
+
+                    <!-- in the source code, -->
+                    in the source code,<br>
+
+                    <!-- but the browser -->
+                    but the browser<br>
+
+                    <!-- ignores it. -->
+                    ignores it.<br>
+
+                    <!-- </p> -->
+                    <span class="tagname-color">
+                        <span class="tag-color">&lt;</span>/p<span class="tag-color">&gt;</span>
+                    </span><br>
+
+                    <!--  -->
+                    <br>
+
+                    <!-- <p> -->
+                    <span class="tagname-color">
+                        <span class="tag-color">&lt;</span>p<span class="tag-color">&gt;</span>
+                    </span><br>
+
+                    <!-- This paragraph -->
+                    This paragraph<br>
+
+                    <!-- contains         a lot of spaces -->
+                    contains&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a lot of spaces<br>
+
+                    <!-- in the source         code, -->
+                    in the source&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;code,<br>
+
+                    <!-- but the        browser -->
+                    but the&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;browser<br>
+
+                    <!-- ignores it. -->
+                    ignores it.<br>
+
+                    <!-- </p> -->
+                    <span class="tagname-color">
+                        <span class="tag-color">&lt;</span>/p<span class="tag-color">&gt;</span>
+                    </span><br>
+
+                    <!--  -->
+                    <br>
+
+                    <!-- <p> -->
+                    <span class="tagname-color">
+                        <span class="tag-color">&lt;</span>p<span class="tag-color">&gt;</span>
+                    </span><br>
+
+                    <!-- The number of lines in a paragraph depends on the size of the browser window. If you resize the browser window, the number of lines in this paragraph will change. -->
+                    The number of lines in a paragraph depends on the size of the browser window. If you resize the browser window, the number of lines in this paragraph will change.
+
+                    <!-- </p> -->
+                    <span class="tagname-color">
+                        <span class="tag-color">&lt;</span>/p<span class="tag-color">&gt;</span>
+                    </span><br>
+
+                    <!--  -->
+                    <br>
+
+                    <!-- </body> -->
+                    <span class="tagname-color">
+                        <span class="tag-color">&lt;</span>/body<span class="tag-color">&gt;</span>
+                    </span><br>
+
+                    <!-- </html> -->
+                    <span class="tagname-color">
+                        <span class="tag-color">&lt;</span>/html<span class="tag-color">&gt;</span>
+                    </span><br>
+                </code></div>
+
+                <iframe src="../examples/paragraphs/example2.html"></iframe>
+            </div>
+        </div>
     </section>
     <hr>
 
@@ -78,6 +353,176 @@
             The <code class="code">&lt;hr&gt;</code> element is used to separate content (or define a change)
             in an HTML page:
         </p>
+
+        <div class="example">
+            <span class="example-title">Example</span>
+
+            <div><code>
+                <!-- <h1>This is Heading 1</h1> --><!--
+            --><span class="tagname-color"><!--
+                --><span class="tag-color">&lt;</span>h1<span class="tag-color">&gt;</span><!--
+            --></span><!--
+            -->This is Heading 1<!--
+            --><span class="tagname-color"><!--
+                --><span class="tag-color">&lt;</span>/h1<span class="tag-color">&gt;</span><!--
+            --></span><br>
+
+                <!-- <p>This is some text.</p> --><!--
+            --><span class="tagname-color"><!--
+                --><span class="tag-color">&lt;</span>p<span class="tag-color">&gt;</span><!--
+            --></span><!--
+            -->This is some text.<!--
+            --><span class="tagname-color"><!--
+                --><span class="tag-color">&lt;</span>/p<span class="tag-color">&gt;</span><!--
+            --></span><br>
+
+                <!-- <hr> -->
+                <span class="tagname-color">
+                    <span class="tag-color">&lt;</span>hr<span class="tag-color">&gt;</span>
+                </span><br>
+
+                <!-- <h2>This is Heading 2</h2> --><!--
+            --><span class="tagname-color"><!--
+                --><span class="tag-color">&lt;</span>h2<span class="tag-color">&gt;</span><!--
+            --></span><!--
+            -->This is Heading 2<!--
+            --><span class="tagname-color"><!--
+                --><span class="tag-color">&lt;</span>/h2<span class="tag-color">&gt;</span><!--
+            --></span><br>
+
+                <!-- <p>This is some other text.</p> --><!--
+            --><span class="tagname-color"><!--
+                --><span class="tag-color">&lt;</span>p<span class="tag-color">&gt;</span><!--
+            --></span><!--
+            -->This is some other text.<!--
+            --><span class="tagname-color"><!--
+                --><span class="tag-color">&lt;</span>/p<span class="tag-color">&gt;</span><!--
+            --></span><br>
+
+                <!-- <hr> -->
+                <span class="tagname-color">
+                    <span class="tag-color">&lt;</span>hr<span class="tag-color">&gt;</span>
+                </span><br>
+            </code></div>
+
+            <button id="rb3" class="result-btn" onclick="
+                resultBtn = document.getElementById('rb3');
+                resultDiv = document.getElementById('r3');
+                if (resultDiv.style.display == 'none' || resultDiv.style.display == '') {
+                    resultDiv.style.display = 'block';
+                    resultBtn.innerHTML = 'Hide Result';
+                }
+                else {
+                    resultDiv.style.display = 'none';
+                    resultBtn.innerHTML = 'Show Result';
+                }
+            ">Show Result</button>
+
+            <div id="r3" class="result">
+                <div><code>
+                    <!-- <!DOCTYPE html> -->
+                    <span class="tag-color">&lt;!DOCTYPE html&gt;</span><br>
+
+                    <!-- <html> -->
+                    <span class="tagname-color">
+                        <span class="tag-color">&lt;</span>html<span class="tag-color">&gt;</span>
+                    </span><br>
+
+                    <!-- <body> -->
+                    <span class="tagname-color">
+                        <span class="tag-color">&lt;</span>body<span class="tag-color">&gt;</span>
+                    </span><br>
+
+                    <!--  -->
+                    <br>
+                    
+                    <!-- <h1>This is Heading 1</h1> --><!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>h1<span class="tag-color">&gt;</span><!--
+                --></span><!--
+                -->This is Heading 1<!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>/h1<span class="tag-color">&gt;</span><!--
+                --></span><br>
+
+                    <!-- <p>This is some text.</p> --><!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>p<span class="tag-color">&gt;</span><!--
+                --></span><!--
+                -->This is some text.<!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>/p<span class="tag-color">&gt;</span><!--
+                --></span><br>
+
+                    <!-- <hr> -->
+                    <span class="tagname-color">
+                        <span class="tag-color">&lt;</span>hr<span class="tag-color">&gt;</span>
+                    </span><br>
+
+                    <!-- <h2>This is Heading 2</h2> --><!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>h2<span class="tag-color">&gt;</span><!--
+                --></span><!--
+                -->This is Heading 2<!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>/h2<span class="tag-color">&gt;</span><!--
+                --></span><br>
+
+                    <!-- <p>This is some other text.</p> --><!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>p<span class="tag-color">&gt;</span><!--
+                --></span><!--
+                -->This is some other text.<!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>/p<span class="tag-color">&gt;</span><!--
+                --></span><br>
+
+                    <!-- <hr> -->
+                    <span class="tagname-color">
+                        <span class="tag-color">&lt;</span>hr<span class="tag-color">&gt;</span>
+                    </span><br>
+
+                    <!-- <h2>This is Heading 2</h2> --><!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>h2<span class="tag-color">&gt;</span><!--
+                --></span><!--
+                -->This is Heading 2<!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>/h2<span class="tag-color">&gt;</span><!--
+                --></span><br>
+
+                    <!-- <p>This is some other text.</p> --><!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>p<span class="tag-color">&gt;</span><!--
+                --></span><!--
+                -->This is some other text.<!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>/p<span class="tag-color">&gt;</span><!--
+                --></span><br>
+
+                    <!-- <hr> -->
+                    <span class="tagname-color">
+                        <span class="tag-color">&lt;</span>hr<span class="tag-color">&gt;</span>
+                    </span><br>
+
+                    <!--  -->
+                    <br>
+
+                    <!-- </body> -->
+                    <span class="tagname-color">
+                        <span class="tag-color">&lt;</span>/body<span class="tag-color">&gt;</span>
+                    </span><br>
+
+                    <!-- </html> -->
+                    <span class="tagname-color">
+                        <span class="tag-color">&lt;</span>/html<span class="tag-color">&gt;</span>
+                    </span><br>
+                </code></div>
+
+                <iframe src="../examples/paragraphs/example3.html"></iframe>
+            </div>
+        </div>
+
         <p>The <code class="code">&lt;hr&gt;</code> tag is an empty tag, which means that it has no end tag.</p>
     </section>
     <hr>
@@ -90,6 +535,95 @@
             Use <code class="code">&lt;br&gt;</code> if you want a line break (a new line)
             without starting a new paragraph:
         </p>
+
+        <div class="example">
+            <span class="example-title">Example</span>
+
+            <div><code>
+                <!-- <p>This is<br>a paragraph<br>with line breaks.</p> --><!--
+            --><span class="tagname-color"><!--
+                --><span class="tag-color">&lt;</span>p<span class="tag-color">&gt;</span><!--
+            --></span><!--
+            -->This is<!--
+            --><span class="tagname-color"><!--
+                --><span class="tag-color">&lt;</span>br<span class="tag-color">&gt;</span><!--
+            --></span><!--
+            -->a paragraph<!--
+            --><span class="tagname-color"><!--
+                --><span class="tag-color">&lt;</span>br<span class="tag-color">&gt;</span><!--
+            --></span><!--
+            -->with line breaks.<!--
+            --><span class="tagname-color"><!--
+                --><span class="tag-color">&lt;</span>/p<span class="tag-color">&gt;</span><!--
+            --></span><br>
+            </code></div>
+
+            <button id="rb4" class="result-btn" onclick="
+                resultBtn = document.getElementById('rb4');
+                resultDiv = document.getElementById('r4');
+                if (resultDiv.style.display == 'none' || resultDiv.style.display == '') {
+                    resultDiv.style.display = 'block';
+                    resultBtn.innerHTML = 'Hide Result';
+                }
+                else {
+                    resultDiv.style.display = 'none';
+                    resultBtn.innerHTML = 'Show Result';
+                }
+            ">Show Result</button>
+
+            <div id="r4" class="result">
+                <div><code>
+                    <!-- <!DOCTYPE html> -->
+                    <span class="tag-color">&lt;!DOCTYPE html&gt;</span><br>
+
+                    <!-- <html> -->
+                    <span class="tagname-color">
+                        <span class="tag-color">&lt;</span>html<span class="tag-color">&gt;</span>
+                    </span><br>
+
+                    <!-- <body> -->
+                    <span class="tagname-color">
+                        <span class="tag-color">&lt;</span>body<span class="tag-color">&gt;</span>
+                    </span><br>
+
+                    <!--  -->
+                    <br>
+                    
+                    <!-- <p>This is<br>a paragraph<br>with line breaks.</p> --><!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>p<span class="tag-color">&gt;</span><!--
+                --></span><!--
+                -->This is<!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>br<span class="tag-color">&gt;</span><!--
+                --></span><!--
+                -->a paragraph<!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>br<span class="tag-color">&gt;</span><!--
+                --></span><!--
+                -->with line breaks.<!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>/p<span class="tag-color">&gt;</span><!--
+                --></span><br>
+
+                    <!--  -->
+                    <br>
+
+                    <!-- </body> -->
+                    <span class="tagname-color">
+                        <span class="tag-color">&lt;</span>/body<span class="tag-color">&gt;</span>
+                    </span><br>
+
+                    <!-- </html> -->
+                    <span class="tagname-color">
+                        <span class="tag-color">&lt;</span>/html<span class="tag-color">&gt;</span>
+                    </span><br>
+                </code></div>
+
+                <iframe src="../examples/paragraphs/example4.html"></iframe>
+            </div>
+        </div>
+
         <p>The <code class="code">&lt;br&gt;</code> tag is an empty tag, which means that it has no end tag.</p>
     </section>
     <hr>
@@ -98,6 +632,134 @@
         <h2>The Poem Problem</h2>
 
         <p>This poem will display on a single line:</p>
+
+        <div class="example">
+            <span class="example-title">Example</span>
+
+            <div><code>
+                <!-- <p> -->
+                <span class="tagname-color">
+                    <span class="tag-color">&lt;</span>p<span class="tag-color">&gt;</span>
+                </span><br>
+
+                <!--   My Bonnie lies over the ocean. -->
+                &nbsp;&nbsp;My Bonnie lies over the ocean.<br>
+
+                <!--  -->
+                <br>
+
+                <!--   My Bonnie lies over the sea. -->
+                &nbsp;&nbsp;My Bonnie lies over the sea.<br>
+
+                <!--  -->
+                <br>
+
+                <!--   My Bonnie lies over the ocean. -->
+                &nbsp;&nbsp;My Bonnie lies over the ocean.<br>
+
+                <!--  -->
+                <br>
+
+                <!--   Oh, bring back my Bonnie to me. -->
+                &nbsp;&nbsp;Oh, bring back my Bonnie to me.<br>
+
+                <!-- </p> -->
+                <span class="tagname-color">
+                    <span class="tag-color">&lt;</span>/p<span class="tag-color">&gt;</span>
+                </span><br>
+            </code></div>
+
+            <button id="rb5" class="result-btn" onclick="
+                resultBtn = document.getElementById('rb5');
+                resultDiv = document.getElementById('r5');
+                if (resultDiv.style.display == 'none' || resultDiv.style.display == '') {
+                    resultDiv.style.display = 'block';
+                    resultBtn.innerHTML = 'Hide Result';
+                }
+                else {
+                    resultDiv.style.display = 'none';
+                    resultBtn.innerHTML = 'Show Result';
+                }
+            ">Show Result</button>
+
+            <div id="r5" class="result">
+                <div><code>
+                    <!-- <!DOCTYPE html> -->
+                    <span class="tag-color">&lt;!DOCTYPE html&gt;</span><br>
+
+                    <!-- <html> -->
+                    <span class="tagname-color">
+                        <span class="tag-color">&lt;</span>html<span class="tag-color">&gt;</span>
+                    </span><br>
+
+                    <!-- <body> -->
+                    <span class="tagname-color">
+                        <span class="tag-color">&lt;</span>body<span class="tag-color">&gt;</span>
+                    </span><br>
+
+                    <!--  -->
+                    <br>
+                    
+                    <!-- <p>In HTML, spaces and new lines are ignored:</p> --><!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>p<span class="tag-color">&gt;</span><!--
+                --></span><!--
+                -->In HTML, spaces and new lines are ignored:<!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>/p<span class="tag-color">&gt;</span><!--
+                --></span><br>
+
+                    <!--  -->
+                    <br>
+
+                    <!-- <p> -->
+                    <span class="tagname-color">
+                        <span class="tag-color">&lt;</span>p<span class="tag-color">&gt;</span>
+                    </span><br>
+
+                    <!--   My Bonnie lies over the ocean. -->
+                    &nbsp;&nbsp;My Bonnie lies over the ocean.<br>
+
+                    <!--  -->
+                    <br>
+
+                    <!--   My Bonnie lies over the sea. -->
+                    &nbsp;&nbsp;My Bonnie lies over the sea.<br>
+
+                    <!--  -->
+                    <br>
+
+                    <!--   My Bonnie lies over the ocean. -->
+                    &nbsp;&nbsp;My Bonnie lies over the ocean.<br>
+
+                    <!--  -->
+                    <br>
+
+                    <!--   Oh, bring back my Bonnie to me. -->
+                    &nbsp;&nbsp;Oh, bring back my Bonnie to me.<br>
+
+                    <!-- </p> -->
+                    <span class="tagname-color">
+                        <span class="tag-color">&lt;</span>/p<span class="tag-color">&gt;</span>
+                    </span><br>
+
+                    <!--  -->
+                    <br>
+
+                    <!-- </body> -->
+                    <span class="tagname-color">
+                        <span class="tag-color">&lt;</span>/body<span class="tag-color">&gt;</span>
+                    </span><br>
+
+                    <!-- </html> -->
+                    <span class="tagname-color">
+                        <span class="tag-color">&lt;</span>/html<span class="tag-color">&gt;</span>
+                    </span><br>
+                </code></div>
+
+                <iframe src="../examples/paragraphs/example5.html"></iframe>
+            </div>
+        </div>
     </section>
     <hr>
 
@@ -109,6 +771,134 @@
             The text inside a <code class="code">&lt;pre&gt;</code> element
             is displayed in a fixed-width font (usually Courier), and it preserves both spaces and line breaks:
         </p>
+
+        <div class="example">
+            <span class="example-title">Example</span>
+
+            <div><code>
+                <!-- <pre> -->
+                <span class="tagname-color">
+                    <span class="tag-color">&lt;</span>pre<span class="tag-color">&gt;</span>
+                </span><br>
+
+                <!--   My Bonnie lies over the ocean. -->
+                &nbsp;&nbsp;My Bonnie lies over the ocean.<br>
+
+                <!--  -->
+                <br>
+
+                <!--   My Bonnie lies over the sea. -->
+                &nbsp;&nbsp;My Bonnie lies over the sea.<br>
+
+                <!--  -->
+                <br>
+
+                <!--   My Bonnie lies over the ocean. -->
+                &nbsp;&nbsp;My Bonnie lies over the ocean.<br>
+
+                <!--  -->
+                <br>
+
+                <!--   Oh, bring back my Bonnie to me. -->
+                &nbsp;&nbsp;Oh, bring back my Bonnie to me.<br>
+
+                <!-- </pre> -->
+                <span class="tagname-color">
+                    <span class="tag-color">&lt;</span>/pre<span class="tag-color">&gt;</span>
+                </span><br>
+            </code></div>
+
+            <button id="rb6" class="result-btn" onclick="
+                resultBtn = document.getElementById('rb6');
+                resultDiv = document.getElementById('r6');
+                if (resultDiv.style.display == 'none' || resultDiv.style.display == '') {
+                    resultDiv.style.display = 'block';
+                    resultBtn.innerHTML = 'Hide Result';
+                }
+                else {
+                    resultDiv.style.display = 'none';
+                    resultBtn.innerHTML = 'Show Result';
+                }
+            ">Show Result</button>
+
+            <div id="r6" class="result">
+                <div><code>
+                    <!-- <!DOCTYPE html> -->
+                    <span class="tag-color">&lt;!DOCTYPE html&gt;</span><br>
+
+                    <!-- <html> -->
+                    <span class="tagname-color">
+                        <span class="tag-color">&lt;</span>html<span class="tag-color">&gt;</span>
+                    </span><br>
+
+                    <!-- <body> -->
+                    <span class="tagname-color">
+                        <span class="tag-color">&lt;</span>body<span class="tag-color">&gt;</span>
+                    </span><br>
+
+                    <!--  -->
+                    <br>
+                    
+                    <!-- <p>The pre tag preserves both spaces and line breaks:</p> --><!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>p<span class="tag-color">&gt;</span><!--
+                --></span><!--
+                -->The pre tag preserves both spaces and line breaks:<!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>/p<span class="tag-color">&gt;</span><!--
+                --></span><br>
+
+                    <!--  -->
+                    <br>
+
+                    <!-- <pre> -->
+                    <span class="tagname-color">
+                        <span class="tag-color">&lt;</span>pre<span class="tag-color">&gt;</span>
+                    </span><br>
+
+                    <!--   My Bonnie lies over the ocean. -->
+                    &nbsp;&nbsp;My Bonnie lies over the ocean.<br>
+
+                    <!--  -->
+                    <br>
+
+                    <!--   My Bonnie lies over the sea. -->
+                    &nbsp;&nbsp;My Bonnie lies over the sea.<br>
+
+                    <!--  -->
+                    <br>
+
+                    <!--   My Bonnie lies over the ocean. -->
+                    &nbsp;&nbsp;My Bonnie lies over the ocean.<br>
+
+                    <!--  -->
+                    <br>
+
+                    <!--   Oh, bring back my Bonnie to me. -->
+                    &nbsp;&nbsp;Oh, bring back my Bonnie to me.<br>
+
+                    <!-- </pre> -->
+                    <span class="tagname-color">
+                        <span class="tag-color">&lt;</span>/pre<span class="tag-color">&gt;</span>
+                    </span><br>
+
+                    <!--  -->
+                    <br>
+
+                    <!-- </body> -->
+                    <span class="tagname-color">
+                        <span class="tag-color">&lt;</span>/body<span class="tag-color">&gt;</span>
+                    </span><br>
+
+                    <!-- </html> -->
+                    <span class="tagname-color">
+                        <span class="tag-color">&lt;</span>/html<span class="tag-color">&gt;</span>
+                    </span><br>
+                </code></div>
+
+                <iframe src="../examples/paragraphs/example6.html"></iframe>
+            </div>
+        </div>
     </section>
     <hr>
 

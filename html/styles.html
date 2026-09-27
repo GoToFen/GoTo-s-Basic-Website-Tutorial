@@ -6,6 +6,7 @@
     <title>HTML Styles</title>
 
     <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../styles/html.css">
 </head>
 <body>
     <nav>
@@ -24,7 +25,6 @@
             <li><a id="self-b" href="styles.html">HTML Styles</a></li>
             <li><a href="formatting.html">HTML Formatting</a></li>
             <li><a href="comments.html">HTML Comments</a></li>
-            <li><a href="css.html">HTML CSS</a></li>
         </ul>
     </nav>
 
@@ -46,6 +46,106 @@
             The HTML <code class="code">style</code> attribute is used to add styles to an element,
             such as color, font, size, and more.
         </p>
+
+        <div class="example">
+            <span class="example-title">Example</span>
+
+            <div style="border-left:0px;">
+                <p style="font-size:20px;color:red;">I am Red</p>
+                <p style="font-size:20px;color:blue;">I am Blue</p>
+                <p style="font-size:36px;">I am Big</p>
+            </div>
+
+            <button id="rb1" class="result-btn" onclick="
+                resultBtn = document.getElementById('rb1');
+                resultDiv = document.getElementById('r1');
+                if (resultDiv.style.display == 'none' || resultDiv.style.display == '') {
+                    resultDiv.style.display = 'block';
+                    resultBtn.innerHTML = 'Hide Result';
+                }
+                else {
+                    resultDiv.style.display = 'none';
+                    resultBtn.innerHTML = 'Show Result';
+                }
+            ">Show Result</button>
+
+            <div id="r1" class="result">
+                <div><code>
+                    <!-- <!DOCTYPE html> -->
+                    <span class="tag-color">&lt;!DOCTYPE html&gt;</span><br>
+
+                    <!-- <html> -->
+                    <span class="tagname-color">
+                        <span class="tag-color">&lt;</span>html<span class="tag-color">&gt;</span>
+                    </span><br>
+
+                    <!-- <body> -->
+                    <span class="tagname-color">
+                        <span class="tag-color">&lt;</span>body<span class="tag-color">&gt;</span>
+                    </span><br>
+
+                    <!--  -->
+                    <br>
+                    
+                    <!-- <p>I am normal</p> --><!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>p<span class="tag-color">&gt;</span><!--
+                --></span><!--
+                -->I am normal<!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>/p<span class="tag-color">&gt;</span><!--
+                --></span><br>
+
+                    <!-- <p style="color:red;">I am red</p> --><!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>p
+                        <span class="attrname-color">style</span><span class="attrval-color">="color:red;"</span><!--
+                    --><span class="tag-color">&gt;</span><!--
+                --></span><!--
+                -->I am red<!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>/p<span class="tag-color">&gt;</span><!--
+                --></span><br>
+
+                    <!-- <p style="color:blue;">I am blue</p> --><!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>p
+                        <span class="attrname-color">style</span><span class="attrval-color">="color:blue;"</span><!--
+                    --><span class="tag-color">&gt;</span><!--
+                --></span><!--
+                -->I am blue<!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>/p<span class="tag-color">&gt;</span><!--
+                --></span><br>
+
+                    <!-- <p style="font-size:50px;">I am big</p> --><!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>p
+                        <span class="attrname-color">style</span><span class="attrval-color">="font-size:50px;"</span><!--
+                    --><span class="tag-color">&gt;</span><!--
+                --></span><!--
+                -->I am big<!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>/p<span class="tag-color">&gt;</span><!--
+                --></span><br>
+
+                    <!--  -->
+                    <br>
+
+                    <!-- </body> -->
+                    <span class="tagname-color">
+                        <span class="tag-color">&lt;</span>/body<span class="tag-color">&gt;</span>
+                    </span><br>
+
+                    <!-- </html> -->
+                    <span class="tagname-color">
+                        <span class="tag-color">&lt;</span>/html<span class="tag-color">&gt;</span>
+                    </span><br>
+                </code></div>
+
+                <iframe src="../examples/styles/example1.html"></iframe>
+            </div>
+        </div>
     </section>
     <hr>
 
@@ -54,6 +154,18 @@
         
         <p>Setting the style of an HTML element, can be done with the <code class="code">style</code> attribute.</p>
         <p>The HTML <code class="code">style</code> attribute has the following syntax:</p>
+
+        <div class="example">
+            <div><code>
+                <!-- <tagname style="property:value;"> --><!--
+            --><span class="tagname-color"><!--
+                --><span class="tag-color">&lt;</span><em>tagname</em>
+                <span class="attrname-color">style</span><span class="attrval-color">="<em>property</em>:<em>value</em>;"</span><!--
+                --><span class="tag-color">&gt;</span><!--
+            --></span><br>
+            </code></div>
+        </div>
+
         <p>
             The <em><strong>property</strong></em> is a CSS property. The <em><strong>value</strong></em> is a CSS value.
         </p>
@@ -70,6 +182,232 @@
         <p>
             The CSS <code class="code">background-color</code> property defines the background color for an HTML element.
         </p>
+
+        <div class="example">
+            <span class="example-title">Example</span>
+            <p>Set the background color for a page to powderblue:</p>
+
+            <div><code>
+                <!-- <body style="background-color:powderblue;"> --><!--
+            --><span class="tagname-color"><!--
+                --><span class="tag-color">&lt;</span>body
+                    <span class="attrname-color">style</span><span class="attrval-color">="background-color:powderblue;"</span><!--
+                --><span class="tag-color">&gt;</span><!--
+            --></span><br>
+
+                <!--  -->
+                <br>
+
+                <!-- <h1>This is a Heading</h1> --><!--
+            --><span class="tagname-color"><!--
+                --><span class="tag-color">&lt;</span>h1<span class="tag-color">&gt;</span><!--
+            --></span><!--
+            -->This is a Heading<!--
+            --><span class="tagname-color"><!--
+                --><span class="tag-color">&lt;</span>/h1<span class="tag-color">&gt;</span><!--
+            --></span><br>
+
+                <!-- <p>This is a paragraph.</p> --><!--
+            --><span class="tagname-color"><!--
+                --><span class="tag-color">&lt;</span>p<span class="tag-color">&gt;</span><!--
+            --></span><!--
+            -->This is a paragraph.<!--
+            --><span class="tagname-color"><!--
+                --><span class="tag-color">&lt;</span>/p<span class="tag-color">&gt;</span><!--
+            --></span><br>
+
+                <!--  -->
+                <br>
+
+                <!-- </body> -->
+                <span class="tagname-color">
+                    <span class="tag-color">&lt;</span>/body<span class="tag-color">&gt;</span>
+                </span><br>
+            </code></div>
+
+            <button id="rb2" class="result-btn" onclick="
+                resultBtn = document.getElementById('rb2');
+                resultDiv = document.getElementById('r2');
+                if (resultDiv.style.display == 'none' || resultDiv.style.display == '') {
+                    resultDiv.style.display = 'block';
+                    resultBtn.innerHTML = 'Hide Result';
+                }
+                else {
+                    resultDiv.style.display = 'none';
+                    resultBtn.innerHTML = 'Show Result';
+                }
+            ">Show Result</button>
+
+            <div id="r2" class="result">
+                <div><code>
+                    <!-- <!DOCTYPE html> -->
+                    <span class="tag-color">&lt;!DOCTYPE html&gt;</span><br>
+
+                    <!-- <html> -->
+                    <span class="tagname-color">
+                        <span class="tag-color">&lt;</span>html<span class="tag-color">&gt;</span>
+                    </span><br>
+
+                    <!-- <body style="background-color:powderblue;"> --><!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>body
+                        <span class="attrname-color">style</span><span class="attrval-color">="background-color:powderblue;"</span><!--
+                    --><span class="tag-color">&gt;</span><!--
+                --></span><br>
+
+                    <!--  -->
+                    <br>
+
+                    <!-- <h1>This is a Heading</h1> --><!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>h1<span class="tag-color">&gt;</span><!--
+                --></span><!--
+                -->This is a Heading<!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>/h1<span class="tag-color">&gt;</span><!--
+                --></span><br>
+
+                    <!-- <p>This is a paragraph.</p> --><!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>p<span class="tag-color">&gt;</span><!--
+                --></span><!--
+                -->This is a paragraph.<!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>/p<span class="tag-color">&gt;</span><!--
+                --></span><br>
+
+                    <!--  -->
+                    <br>
+
+                    <!-- </body> -->
+                    <span class="tagname-color">
+                        <span class="tag-color">&lt;</span>/body<span class="tag-color">&gt;</span>
+                    </span><br>
+
+                    <!-- </html> -->
+                    <span class="tagname-color">
+                        <span class="tag-color">&lt;</span>/html<span class="tag-color">&gt;</span>
+                    </span><br>
+                </code></div>
+
+                <iframe src="../examples/styles/example2.html"></iframe>
+            </div>
+        </div>
+
+        <div class="example">
+            <span class="example-title">Example</span>
+            <p>Set the background color for two different elements:</p>
+
+            <div><code>
+                <!-- <body> -->
+                <span class="tagname-color">
+                    <span class="tag-color">&lt;</span>body<span class="tag-color">&gt;</span>
+                </span><br>
+
+                <!--  -->
+                <br>
+
+                <!-- <h1 style="background-color:powderblue;">This is a Heading</h1> --><!--
+            --><span class="tagname-color"><!--
+                --><span class="tag-color">&lt;</span>h1
+                    <span class="attrname-color">style</span><span class="attrval-color">="background-color:powderblue;"</span><!--
+                --><span class="tag-color">&gt;</span><!--
+            --></span><!--
+            -->This is a Heading<!--
+            --><span class="tagname-color"><!--
+                --><span class="tag-color">&lt;</span>/h1<span class="tag-color">&gt;</span><!--
+            --></span><br>
+
+                <!-- <p style="background-color:tomato;">This is a paragraph.</p> --><!--
+            --><span class="tagname-color"><!--
+                --><span class="tag-color">&lt;</span>p
+                    <span class="attrname-color">style</span><span class="attrval-color">="background-color:tomato;"</span><!--
+                --><span class="tag-color">&gt;</span><!--
+            --></span><!--
+            -->This is a paragraph.<!--
+            --><span class="tagname-color"><!--
+                --><span class="tag-color">&lt;</span>/p<span class="tag-color">&gt;</span><!--
+            --></span><br>
+
+                <!--  -->
+                <br>
+
+                <!-- </body> -->
+                <span class="tagname-color">
+                    <span class="tag-color">&lt;</span>/body<span class="tag-color">&gt;</span>
+                </span><br>
+            </code></div>
+
+            <button id="rb3" class="result-btn" onclick="
+                resultBtn = document.getElementById('rb3');
+                resultDiv = document.getElementById('r3');
+                if (resultDiv.style.display == 'none' || resultDiv.style.display == '') {
+                    resultDiv.style.display = 'block';
+                    resultBtn.innerHTML = 'Hide Result';
+                }
+                else {
+                    resultDiv.style.display = 'none';
+                    resultBtn.innerHTML = 'Show Result';
+                }
+            ">Show Result</button>
+
+            <div id="r3" class="result">
+                <div><code>
+                    <!-- <!DOCTYPE html> -->
+                    <span class="tag-color">&lt;!DOCTYPE html&gt;</span><br>
+
+                    <!-- <html> -->
+                    <span class="tagname-color">
+                        <span class="tag-color">&lt;</span>html<span class="tag-color">&gt;</span>
+                    </span><br>
+
+                    <!-- <body> -->
+                    <span class="tagname-color">
+                        <span class="tag-color">&lt;</span>body<span class="tag-color">&gt;</span>
+                    </span><br>
+
+                    <!--  -->
+                    <br>
+
+                    <!-- <h1 style="background-color:powderblue;">This is a Heading</h1> --><!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>h1
+                        <span class="attrname-color">style</span><span class="attrval-color">="background-color:powderblue;"</span><!--
+                    --><span class="tag-color">&gt;</span><!--
+                --></span><!--
+                -->This is a Heading<!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>/h1<span class="tag-color">&gt;</span><!--
+                --></span><br>
+
+                    <!-- <p style="background-color:tomato;">This is a paragraph.</p> --><!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>p
+                        <span class="attrname-color">style</span><span class="attrval-color">="background-color:tomato;"</span><!--
+                    --><span class="tag-color">&gt;</span><!--
+                --></span><!--
+                -->This is a paragraph.<!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>/p<span class="tag-color">&gt;</span><!--
+                --></span><br>
+
+                    <!--  -->
+                    <br>
+
+                    <!-- </body> -->
+                    <span class="tagname-color">
+                        <span class="tag-color">&lt;</span>/body<span class="tag-color">&gt;</span>
+                    </span><br>
+
+                    <!-- </html> -->
+                    <span class="tagname-color">
+                        <span class="tag-color">&lt;</span>/html<span class="tag-color">&gt;</span>
+                    </span><br>
+                </code></div>
+
+                <iframe src="../examples/styles/example3.html"></iframe>
+            </div>
+        </div>
     </section>
     <hr>
 
@@ -77,6 +415,104 @@
         <h2>Text Color</h2>
 
         <p>The CSS <code class="code">color</code> property defines the text color for an HTML element:</p>
+
+        <div class="example">
+            <span class="example-title">Example</span>
+            
+            <div><code>
+                <!-- <h1 style="color:blue;">This is a Heading</h1> --><!--
+            --><span class="tagname-color"><!--
+                --><span class="tag-color">&lt;</span>h1
+                    <span class="attrname-color">style</span><span class="attrval-color">="color:blue;"</span><!--
+                --><span class="tag-color">&gt;</span><!--
+            --></span><!--
+            -->This is a Heading<!--
+            --><span class="tagname-color"><!--
+                --><span class="tag-color">&lt;</span>/h1<span class="tag-color">&gt;</span><!--
+            --></span><br>
+
+                <!-- <p style="color:red;">This is a paragraph.</p> --><!--
+            --><span class="tagname-color"><!--
+                --><span class="tag-color">&lt;</span>p
+                    <span class="attrname-color">style</span><span class="attrval-color">="color:red;"</span><!--
+                --><span class="tag-color">&gt;</span><!--
+            --></span><!--
+            -->This is a paragraph.<!--
+            --><span class="tagname-color"><!--
+                --><span class="tag-color">&lt;</span>/p<span class="tag-color">&gt;</span><!--
+            --></span><br>
+            </code></div>
+
+            <button id="rb4" class="result-btn" onclick="
+                resultBtn = document.getElementById('rb4');
+                resultDiv = document.getElementById('r4');
+                if (resultDiv.style.display == 'none' || resultDiv.style.display == '') {
+                    resultDiv.style.display = 'block';
+                    resultBtn.innerHTML = 'Hide Result';
+                }
+                else {
+                    resultDiv.style.display = 'none';
+                    resultBtn.innerHTML = 'Show Result';
+                }
+            ">Show Result</button>
+
+            <div id="r4" class="result">
+                <div><code>
+                    <!-- <!DOCTYPE html> -->
+                    <span class="tag-color">&lt;!DOCTYPE html&gt;</span><br>
+
+                    <!-- <html> -->
+                    <span class="tagname-color">
+                        <span class="tag-color">&lt;</span>html<span class="tag-color">&gt;</span>
+                    </span><br>
+
+                    <!-- <body> -->
+                    <span class="tagname-color">
+                        <span class="tag-color">&lt;</span>body<span class="tag-color">&gt;</span>
+                    </span><br>
+
+                    <!--  -->
+                    <br>
+
+                    <!-- <h1 style="color:blue;">This is a Heading</h1> --><!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>h1
+                        <span class="attrname-color">style</span><span class="attrval-color">="color:blue;"</span><!--
+                    --><span class="tag-color">&gt;</span><!--
+                --></span><!--
+                -->This is a Heading<!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>/h1<span class="tag-color">&gt;</span><!--
+                --></span><br>
+
+                    <!-- <p style="color:red;">This is a paragraph.</p> --><!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>p
+                        <span class="attrname-color">style</span><span class="attrval-color">="color:red;"</span><!--
+                    --><span class="tag-color">&gt;</span><!--
+                --></span><!--
+                -->This is a paragraph.<!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>/p<span class="tag-color">&gt;</span><!--
+                --></span><br>
+
+                    <!--  -->
+                    <br>
+
+                    <!-- </body> -->
+                    <span class="tagname-color">
+                        <span class="tag-color">&lt;</span>/body<span class="tag-color">&gt;</span>
+                    </span><br>
+
+                    <!-- </html> -->
+                    <span class="tagname-color">
+                        <span class="tag-color">&lt;</span>/html<span class="tag-color">&gt;</span>
+                    </span><br>
+                </code></div>
+
+                <iframe src="../examples/styles/example4.html"></iframe>
+            </div>
+        </div>
     </section>
     <hr>
 
@@ -84,6 +520,104 @@
         <h2>Fonts</h2>
 
         <p>The CSS <code class="code">font-family</code> property defines the font to be used for an HTML element:</p>
+
+        <div class="example">
+            <span class="example-title">Example</span>
+            
+            <div><code>
+                <!-- <h1 style="font-family:verdana;">This is a Heading</h1> --><!--
+            --><span class="tagname-color"><!--
+                --><span class="tag-color">&lt;</span>h1
+                    <span class="attrname-color">style</span><span class="attrval-color">="font-family:verdana;"</span><!--
+                --><span class="tag-color">&gt;</span><!--
+            --></span><!--
+            -->This is a Heading<!--
+            --><span class="tagname-color"><!--
+                --><span class="tag-color">&lt;</span>/h1<span class="tag-color">&gt;</span><!--
+            --></span><br>
+
+                <!-- <p style="font-family:courier;">This is a paragraph.</p> --><!--
+            --><span class="tagname-color"><!--
+                --><span class="tag-color">&lt;</span>p
+                    <span class="attrname-color">style</span><span class="attrval-color">="font-family:courier;"</span><!--
+                --><span class="tag-color">&gt;</span><!--
+            --></span><!--
+            -->This is a paragraph.<!--
+            --><span class="tagname-color"><!--
+                --><span class="tag-color">&lt;</span>/p<span class="tag-color">&gt;</span><!--
+            --></span><br>
+            </code></div>
+
+            <button id="rb5" class="result-btn" onclick="
+                resultBtn = document.getElementById('rb5');
+                resultDiv = document.getElementById('r5');
+                if (resultDiv.style.display == 'none' || resultDiv.style.display == '') {
+                    resultDiv.style.display = 'block';
+                    resultBtn.innerHTML = 'Hide Result';
+                }
+                else {
+                    resultDiv.style.display = 'none';
+                    resultBtn.innerHTML = 'Show Result';
+                }
+            ">Show Result</button>
+
+            <div id="r5" class="result">
+                <div><code>
+                    <!-- <!DOCTYPE html> -->
+                    <span class="tag-color">&lt;!DOCTYPE html&gt;</span><br>
+
+                    <!-- <html> -->
+                    <span class="tagname-color">
+                        <span class="tag-color">&lt;</span>html<span class="tag-color">&gt;</span>
+                    </span><br>
+
+                    <!-- <body> -->
+                    <span class="tagname-color">
+                        <span class="tag-color">&lt;</span>body<span class="tag-color">&gt;</span>
+                    </span><br>
+
+                    <!--  -->
+                    <br>
+
+                    <!-- <h1 style="font-family:verdana;">This is a Heading</h1> --><!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>h1
+                        <span class="attrname-color">style</span><span class="attrval-color">="font-family:verdana;"</span><!--
+                    --><span class="tag-color">&gt;</span><!--
+                --></span><!--
+                -->This is a Heading<!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>/h1<span class="tag-color">&gt;</span><!--
+                --></span><br>
+
+                    <!-- <p style="font-family:courier;">This is a paragraph.</p> --><!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>p
+                        <span class="attrname-color">style</span><span class="attrval-color">="font-family:courier;"</span><!--
+                    --><span class="tag-color">&gt;</span><!--
+                --></span><!--
+                -->This is a paragraph.<!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>/p<span class="tag-color">&gt;</span><!--
+                --></span><br>
+
+                    <!--  -->
+                    <br>
+
+                    <!-- </body> -->
+                    <span class="tagname-color">
+                        <span class="tag-color">&lt;</span>/body<span class="tag-color">&gt;</span>
+                    </span><br>
+
+                    <!-- </html> -->
+                    <span class="tagname-color">
+                        <span class="tag-color">&lt;</span>/html<span class="tag-color">&gt;</span>
+                    </span><br>
+                </code></div>
+
+                <iframe src="../examples/styles/example5.html"></iframe>
+            </div>
+        </div>
     </section>
     <hr>
 
@@ -91,6 +625,104 @@
         <h2>Text Size</h2>
 
         <p>The CSS <code class="code">font-size</code> property defines the text size for an HTML element:</p>
+
+        <div class="example">
+            <span class="example-title">Example</span>
+            
+            <div><code>
+                <!-- <h1 style="font-size:300%;">This is a Heading</h1> --><!--
+            --><span class="tagname-color"><!--
+                --><span class="tag-color">&lt;</span>h1
+                    <span class="attrname-color">style</span><span class="attrval-color">="font-size:300%;"</span><!--
+                --><span class="tag-color">&gt;</span><!--
+            --></span><!--
+            -->This is a Heading<!--
+            --><span class="tagname-color"><!--
+                --><span class="tag-color">&lt;</span>/h1<span class="tag-color">&gt;</span><!--
+            --></span><br>
+
+                <!-- <p style="font-size:160%;">This is a paragraph.</p> --><!--
+            --><span class="tagname-color"><!--
+                --><span class="tag-color">&lt;</span>p
+                    <span class="attrname-color">style</span><span class="attrval-color">="font-size:160%;"</span><!--
+                --><span class="tag-color">&gt;</span><!--
+            --></span><!--
+            -->This is a paragraph.<!--
+            --><span class="tagname-color"><!--
+                --><span class="tag-color">&lt;</span>/p<span class="tag-color">&gt;</span><!--
+            --></span><br>
+            </code></div>
+
+            <button id="rb6" class="result-btn" onclick="
+                resultBtn = document.getElementById('rb6');
+                resultDiv = document.getElementById('r6');
+                if (resultDiv.style.display == 'none' || resultDiv.style.display == '') {
+                    resultDiv.style.display = 'block';
+                    resultBtn.innerHTML = 'Hide Result';
+                }
+                else {
+                    resultDiv.style.display = 'none';
+                    resultBtn.innerHTML = 'Show Result';
+                }
+            ">Show Result</button>
+
+            <div id="r6" class="result">
+                <div><code>
+                    <!-- <!DOCTYPE html> -->
+                    <span class="tag-color">&lt;!DOCTYPE html&gt;</span><br>
+
+                    <!-- <html> -->
+                    <span class="tagname-color">
+                        <span class="tag-color">&lt;</span>html<span class="tag-color">&gt;</span>
+                    </span><br>
+
+                    <!-- <body> -->
+                    <span class="tagname-color">
+                        <span class="tag-color">&lt;</span>body<span class="tag-color">&gt;</span>
+                    </span><br>
+
+                    <!--  -->
+                    <br>
+
+                    <!-- <h1 style="font-size:300%;">This is a Heading</h1> --><!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>h1
+                        <span class="attrname-color">style</span><span class="attrval-color">="font-size:300%;"</span><!--
+                    --><span class="tag-color">&gt;</span><!--
+                --></span><!--
+                -->This is a Heading<!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>/h1<span class="tag-color">&gt;</span><!--
+                --></span><br>
+
+                    <!-- <p style="font-size:160%;">This is a paragraph.</p> --><!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>p
+                        <span class="attrname-color">style</span><span class="attrval-color">="font-size:160%;"</span><!--
+                    --><span class="tag-color">&gt;</span><!--
+                --></span><!--
+                -->This is a paragraph.<!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>/p<span class="tag-color">&gt;</span><!--
+                --></span><br>
+
+                    <!--  -->
+                    <br>
+
+                    <!-- </body> -->
+                    <span class="tagname-color">
+                        <span class="tag-color">&lt;</span>/body<span class="tag-color">&gt;</span>
+                    </span><br>
+
+                    <!-- </html> -->
+                    <span class="tagname-color">
+                        <span class="tag-color">&lt;</span>/html<span class="tag-color">&gt;</span>
+                    </span><br>
+                </code></div>
+
+                <iframe src="../examples/styles/example6.html"></iframe>
+            </div>
+        </div>
     </section>
     <hr>
 
@@ -101,6 +733,104 @@
             The CSS <code class="code">text-align</code> property
             defines the horizontal text alignment for an HTML element:
         </p>
+
+        <div class="example">
+            <span class="example-title">Example</span>
+            
+            <div><code>
+                <!-- <h1 style="text-align:center;">This is a Heading</h1> --><!--
+            --><span class="tagname-color"><!--
+                --><span class="tag-color">&lt;</span>h1
+                    <span class="attrname-color">style</span><span class="attrval-color">="text-align:center;"</span><!--
+                --><span class="tag-color">&gt;</span><!--
+            --></span><!--
+            -->This is a Heading<!--
+            --><span class="tagname-color"><!--
+                --><span class="tag-color">&lt;</span>/h1<span class="tag-color">&gt;</span><!--
+            --></span><br>
+
+                <!-- <p style="text-align:center;">This is a paragraph.</p> --><!--
+            --><span class="tagname-color"><!--
+                --><span class="tag-color">&lt;</span>p
+                    <span class="attrname-color">style</span><span class="attrval-color">="text-align:center;"</span><!--
+                --><span class="tag-color">&gt;</span><!--
+            --></span><!--
+            -->This is a paragraph.<!--
+            --><span class="tagname-color"><!--
+                --><span class="tag-color">&lt;</span>/p<span class="tag-color">&gt;</span><!--
+            --></span><br>
+            </code></div>
+
+            <button id="rb7" class="result-btn" onclick="
+                resultBtn = document.getElementById('rb7');
+                resultDiv = document.getElementById('r7');
+                if (resultDiv.style.display == 'none' || resultDiv.style.display == '') {
+                    resultDiv.style.display = 'block';
+                    resultBtn.innerHTML = 'Hide Result';
+                }
+                else {
+                    resultDiv.style.display = 'none';
+                    resultBtn.innerHTML = 'Show Result';
+                }
+            ">Show Result</button>
+
+            <div id="r7" class="result">
+                <div><code>
+                    <!-- <!DOCTYPE html> -->
+                    <span class="tag-color">&lt;!DOCTYPE html&gt;</span><br>
+
+                    <!-- <html> -->
+                    <span class="tagname-color">
+                        <span class="tag-color">&lt;</span>html<span class="tag-color">&gt;</span>
+                    </span><br>
+
+                    <!-- <body> -->
+                    <span class="tagname-color">
+                        <span class="tag-color">&lt;</span>body<span class="tag-color">&gt;</span>
+                    </span><br>
+
+                    <!--  -->
+                    <br>
+
+                    <!-- <h1 style="text-align:center;">This is a Heading</h1> --><!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>h1
+                        <span class="attrname-color">style</span><span class="attrval-color">="text-align:center;"</span><!--
+                    --><span class="tag-color">&gt;</span><!--
+                --></span><!--
+                -->This is a Heading<!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>/h1<span class="tag-color">&gt;</span><!--
+                --></span><br>
+
+                    <!-- <p style="text-align:center;">This is a paragraph.</p> --><!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>p
+                        <span class="attrname-color">style</span><span class="attrval-color">="text-align:center;"</span><!--
+                    --><span class="tag-color">&gt;</span><!--
+                --></span><!--
+                -->This is a paragraph.<!--
+                --><span class="tagname-color"><!--
+                    --><span class="tag-color">&lt;</span>/p<span class="tag-color">&gt;</span><!--
+                --></span><br>
+
+                    <!--  -->
+                    <br>
+
+                    <!-- </body> -->
+                    <span class="tagname-color">
+                        <span class="tag-color">&lt;</span>/body<span class="tag-color">&gt;</span>
+                    </span><br>
+
+                    <!-- </html> -->
+                    <span class="tagname-color">
+                        <span class="tag-color">&lt;</span>/html<span class="tag-color">&gt;</span>
+                    </span><br>
+                </code></div>
+
+                <iframe src="../examples/styles/example7.html"></iframe>
+            </div>
+        </div>
     </section>
     <hr>
 
